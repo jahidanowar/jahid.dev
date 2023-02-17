@@ -1,0 +1,19 @@
+{
+    "hero_title": "Architecting the next generation of web applications",
+    "hero_description": "Hey this is Jahid, A Full stack developer and Indie Hacker. I love building cool things and making videos about it.",
+    "hero_button_primary": "Checkout my blog",
+    "hero_button_secondary": "Get in touch",
+    "its_free": "It's free",
+    "explore": "Explore",
+    "youtube": "Youtube",
+    "video": "Video",
+    "videos": "Videos",
+    "navigation": {
+        "blog": "Blog",
+        "videos": "Videos",
+        "services": "Services",
+        "about": "About",
+        "contact": "Contact",
+        "projects": "Projects"
+    }
+}
