@@ -5,16 +5,16 @@ const isOpen = ref(false);
 
 const navigation = ref<Navigation[]>([
   {
+    label: t("navigation.projects"),
+    to: "/projects",
+  },
+  {
     label: t("navigation.blog"),
     to: "/blog",
   },
   {
     label: t("navigation.videos"),
     to: "/videos",
-  },
-  {
-    label: t("navigation.projects"),
-    to: "/projects",
   },
   {
     label: t("navigation.contact"),
@@ -25,7 +25,7 @@ const navigation = ref<Navigation[]>([
 
 <template>
   <nav
-    class="navbar bg-white/10 dark:bg-black/10 backdrop-blur-md border-b border-black/10 dark:border-white/10 w-full fixed top-0 z-50 py-3"
+    class="navbar bg-white/10 dark:bg-black/10 backdrop-blur-md border-b border-black/10 dark:border-white/10 w-full fixed top-0 z-50 py-5"
   >
     <div
       class="container flex justify-between items-center flex-col lg:flex-row"

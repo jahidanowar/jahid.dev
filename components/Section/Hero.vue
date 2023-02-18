@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-import { Icon } from "@iconify/vue";
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div
@@ -14,18 +12,22 @@ import { Icon } from "@iconify/vue";
         {{ $t("hero_title") }}
       </h1>
       <p
-        class="leading-relaxed lg:text-lg mt-6 w-11/12 lg:w-7/12 text-center lg:text-left"
+        class="leading-relaxed mt-6 w-11/12 lg:w-7/12 text-center lg:text-left"
       >
         {{ $t("hero_description") }}
       </p>
       <div class="flex my-6 flex-wrap justify-center gap-2">
-        <NuxtLink to="/blog/" class="btn btn-primary inline-flex">
+        <NuxtLink to="/blog/" class="btn btn-primary inline-flex items-center">
           <span>{{ $t("hero_button_primary") }}</span>
-          <Icon name="circum:bullhorn" size="20px" class="mr-2" />
+          <Icon name="circum:bullhorn" size="20px" class="ml-2" />
         </NuxtLink>
-        <NuxtLink to="/contact/" class="ml-2 btn btn-default">{{
-          $t("hero_button_secondary")
-        }}</NuxtLink>
+        <NuxtLink
+          to="/contact/"
+          class="ml-2 btn btn-default inline-flex items-xenter"
+        >
+          <span>{{ $t("hero_button_secondary") }}</span>
+          <Icon name="circum:video-on" size="20px" class="ml-2" />
+        </NuxtLink>
       </div>
     </div>
     <!-- Video Content  -->
@@ -47,7 +49,7 @@ import { Icon } from "@iconify/vue";
       </div>
 
       <div
-        class="w-full min:h-[300px] relative rounded-2xl border-8 border-white border-opacity-30 dark:border-opacity-70 dark:border-gray-800 bg-white dark:bg-gray-900 backdrop-blur bg-opacity-20 dark:bg-opacity-20 shadow-2xl dark:shadow-2xl overflow-hidden group hover:cursor-pointer mb-12"
+        class="w-full min:h-[300px] relative rounded-2xl border-8 border-white border-opacity-30 dark:border-opacity-70 dark:border-black/30 bg-white dark:bg-gray-900 backdrop-blur bg-opacity-20 dark:bg-opacity-20 shadow-2xl dark:shadow-2xl overflow-hidden group hover:cursor-pointer mb-12"
       >
         <div class="h-full w-full relative">
           <nuxt-img
@@ -71,7 +73,7 @@ import { Icon } from "@iconify/vue";
           </div>
         </div>
         <div
-          class="p-4 w-full bg-white dark:bg-gray-900 text-center flex justify-center bg-opacity-60 z-20"
+          class="p-4 w-full bg-white dark:bg-black/50 text-center flex justify-center bg-opacity-60 z-20"
         >
           <h3>
             {{ $t("explore") + " " + $t("youtube") + " " + $t("videos") }}
