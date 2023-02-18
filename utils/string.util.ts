@@ -11,3 +11,12 @@ export function trunctate(str: string, length: number, sufix: string = "...") {
   }
   return str;
 }
+
+/**
+ * Capitalize String
+ * @param str
+ * @returns
+ */
+export function capitalize(str: string) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}

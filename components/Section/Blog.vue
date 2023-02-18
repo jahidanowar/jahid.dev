@@ -8,7 +8,7 @@
       }"
     >
       <template #title>
-        Web Development Wisdom <br />
+        Web Development Wisdom <br class="hidden lg:block" />
         <span class="text-primary-500">Lessons Learned and Shared</span>
       </template>
       <template #action>
@@ -46,12 +46,21 @@
               height="188px"
               loading="lazy"
             ></NuxtImg>
+            <!-- Blog Meta -->
+            <div class="inline-flex items-center mb-2">
+              <div class="inline-flex items-center">
+                <Icon name="heroicons:calendar" class="mr-2" size="16" />
+                <span>{{ formatDate(blog.date) }}</span>
+              </div>
+              <div class="inline-flex items-center ml-4">
+                <Icon name="heroicons:user" class="mr-2" size="16" />
+                <span>Jahid</span>
+              </div>
+            </div>
+            <!-- ./ Blog Meta  -->
             <h3 class="text-lg leading-tight font-bold">
               {{ blog.title }}
             </h3>
-            <p class="mt-2 text-white/70">
-              {{ trunctate(blog.excerpt, 100) }}
-            </p>
           </article>
         </div>
       </div>

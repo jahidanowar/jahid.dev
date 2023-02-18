@@ -81,6 +81,7 @@
         </div>
       </div>
     </div>
+    <!-- ./ Video Content  -->
   </div>
 </template>
 
