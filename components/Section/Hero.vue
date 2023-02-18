@@ -2,17 +2,17 @@
 
 <template>
   <div
-    class="section-hero container mx-auto flex flex-col lg:flex-row justify-between items-center md:h-screen relative w-full px-4"
+    class="section-hero container mx-auto flex flex-col md:flex-row justify-between items-center lg:h-screen relative w-full px-4 md:py-20 lg:py-0"
   >
     <!-- Text  -->
     <div
-      class="mx-auto w-full md:w-7/12 z-20 flex flex-col gap-y-4 items-center lg:items-start"
+      class="mx-auto w-full md:w-7/12 z-20 flex flex-col gap-y-4 items-center md:items-start"
     >
-      <h1 class="text-4xl md:text-6xl text-center lg:text-left font-bold">
+      <h1 class="text-4xl lg:text-6xl text-center md:text-left font-bold">
         {{ $t("hero_title") }}
       </h1>
       <p
-        class="leading-relaxed mt-6 w-11/12 lg:w-7/12 text-center lg:text-left"
+        class="leading-relaxed mt-6 w-11/12 lg:w-7/12 text-center md:text-left"
       >
         {{ $t("hero_description") }}
       </p>

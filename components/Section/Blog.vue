@@ -31,13 +31,13 @@
       }"
       v-slot="{ list }"
     >
-      <div class="overflow-x-scroll flex thin-scrollbar">
+      <div class="overflow-x-scroll flex thin-scrollbar cursor-scroll">
         <div
           v-for="blog in list"
           :key="blog._path"
-          class="w-full lg:w-1/3 flex-none mr-5"
+          class="w-full md:w-1/3 flex-none mr-5"
         >
-          <article class="bg-white/5 border border-white/10 p-5 rounded-2xl">
+          <article class="bg-white/5 border border-white/10 p-5 rounded-3xl">
             <NuxtImg
               :src="blog.image"
               :alt="blog.title"

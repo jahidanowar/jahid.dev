@@ -15,11 +15,11 @@ defineProps<{
     class="section-heading mb-10"
     :class="
       action
-        ? 'flex lg:justify-between lg:items-end flex-col lg:flex-row gap-5'
+        ? 'flex md:justify-between md:items-end flex-col md:flex-row gap-5'
         : ''
     "
   >
-    <h2>
+    <h2 class="md:w-1/2">
       <slot name="title">
         {{ title }}
       </slot>

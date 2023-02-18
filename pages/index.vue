@@ -15,18 +15,7 @@
     <!-- ./ Blog Section -->
 
     <!-- Video Section -->
-    <SectionVideo />
+    <!-- <SectionVideo /> -->
     <!-- ./ Video Section  -->
   </main>
 </template>
-
-<style>
-.clientele {
-  background-image: linear-gradient(rgba(0, 22, 41, 0.9), rgba(0, 0, 0, 0.3)),
-    url("~/assets/img/worldmap.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-</style>
