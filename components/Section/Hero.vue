@@ -53,7 +53,7 @@
       >
         <div class="h-full w-full relative">
           <nuxt-img
-            src="https://res.cloudinary.com/jahiddev/image/upload/v1669872286/Deploy_Nuxt_3_App_on_Digital_Ocean_App_Platform_iczdfm.webp"
+            src="/images/feature-video.webp"
             class="w-full h-full"
           ></nuxt-img>
           <div
