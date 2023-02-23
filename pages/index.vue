@@ -15,7 +15,7 @@
     <!-- ./ Blog Section -->
 
     <!-- Video Section -->
-    <!-- <SectionVideo /> -->
+    <SectionVideo class="mt-10" />
     <!-- ./ Video Section  -->
   </main>
 </template>
