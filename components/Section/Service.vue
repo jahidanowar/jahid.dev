@@ -105,7 +105,7 @@ const services = ref([
 
 <style scoped>
 .clientele {
-  background-image: linear-gradient(rgba(0, 22, 41, 0.5), rgba(0, 3, 29, 0.9)),
+  background-image: linear-gradient(rgba(0, 22, 41, 0.5), rgba(0, 3, 29, 0.5)),
     url("~/assets/img/worldmap.jpg");
   background-size: cover;
   background-position: center;

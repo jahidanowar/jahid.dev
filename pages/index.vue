@@ -15,7 +15,14 @@
     <!-- ./ Blog Section -->
 
     <!-- Video Section -->
-    <SectionVideo class="mt-10" />
+    <SectionVideo class="mt-20" />
     <!-- ./ Video Section  -->
+
+    <!-- Project Section Section  -->
+
+    <!-- ./ Project Section  -->
+
+    <!-- CTA  -->
+    <!-- ./ CTA  -->
   </main>
 </template>
