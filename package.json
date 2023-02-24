@@ -18,10 +18,10 @@
     "nuxt": "^3.1.2",
     "nuxt-icon": "^0.3.2",
     "nuxt-icons": "^3.1.0",
-    "nuxt-seo-kit": "^1.2.3"
+    "nuxt-seo-kit": "^1.2.3",
+    "nuxt-swiper": "^1.0.0"
   },
   "dependencies": {
-    "date-fns": "^2.29.3",
-    "swiper": "^9.0.5"
+    "date-fns": "^2.29.3"
   }
 }

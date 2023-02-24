@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/image-edge",
     "@nuxtjs/i18n",
+    "nuxt-swiper",
   ],
 
   /**
