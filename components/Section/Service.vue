@@ -25,7 +25,10 @@ const services = ref([
   <div class="container pb-24">
     <!-- Heading  -->
     <div class="text-center">
-      <h2>Things I do and brag about</h2>
+      <h2>
+        Things I do and<br class="lg:hidden" />
+        brag about
+      </h2>
       <p class="mt-2">
         I help businesses connect with audiences, delivering greater brand
         engagement <br class="hidden lg:block" />

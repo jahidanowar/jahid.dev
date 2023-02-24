@@ -1,6 +1,6 @@
 <script lang="ts" setup></script>
 <template>
-  <main class="pt-20 lg:pt-0">
+  <main class="pt-20 lg:pt-0 overflow-hidden sm:overflow-auto">
     <Title>Jahid - Full Stack Web Developer</Title>
     <!-- Hero Section  -->
     <SectionHero />

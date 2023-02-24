@@ -15,11 +15,11 @@ defineProps<{
     class="section-heading mb-10"
     :class="
       action
-        ? 'flex md:justify-between md:items-end flex-col md:flex-row gap-5'
+        ? 'flex items-center md:justify-between md:items-end flex-col md:flex-row gap-5'
         : ''
     "
   >
-    <h2 class="md:w-1/2">
+    <h2 class="md:w-1/2 text-center md:text-left">
       <slot name="title">
         {{ title }}
       </slot>
@@ -29,7 +29,7 @@ defineProps<{
       <NuxtLink
         v-if="action"
         :to="action.to"
-        class="btn btn-default inline-flex items-center"
+        class="btn btn-default inline-flex items-center group"
       >
         <slot name="action">
           <span>{{ action.text }}</span>

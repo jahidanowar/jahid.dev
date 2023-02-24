@@ -13,7 +13,11 @@
       </template>
       <template #action>
         <span>View All</span>
-        <Icon name="heroicons:arrow-right" size="16" class="ml-1" />
+        <Icon
+          name="heroicons:arrow-right"
+          size="16"
+          class="ml-1 group-hover:translate-x-1 transition-all duration-300 ease-in-out"
+        />
       </template>
     </SectionHeading>
 

@@ -25,7 +25,7 @@ const navigation = ref<Navigation[]>([
 
 <template>
   <nav
-    class="navbar bg-white/10 dark:bg-black/10 backdrop-blur-md border-b border-black/10 dark:border-white/10 w-full fixed top-0 z-50 py-5"
+    class="navbar bg-white/10 dark:bg-black/10 backdrop-blur-md border-b border-black/10 dark:border-white/10 w-full fixed top-0 z-50 py-3"
   >
     <div
       class="container flex justify-between items-center flex-col lg:flex-row"
@@ -34,7 +34,7 @@ const navigation = ref<Navigation[]>([
         <!-- Logo  -->
         <div class="logo">
           <NuxtLink to="/">
-            <Logo height="20px" />
+            <Logo height="25px" />
           </NuxtLink>
         </div>
         <!-- ./ Logo  -->
