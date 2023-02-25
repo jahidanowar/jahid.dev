@@ -8,7 +8,9 @@
     <div
       class="mx-auto w-full md:w-7/12 z-20 flex flex-col gap-y-4 items-center md:items-start"
     >
-      <h1 class="text-4xl lg:text-6xl text-center md:text-left font-bold">
+      <h1
+        class="text-4xl lg:text-6xl text-center md:text-left font-bold tracking-tight"
+      >
         {{ $t("hero_title") }}
       </h1>
       <p

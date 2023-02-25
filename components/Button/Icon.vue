@@ -14,7 +14,7 @@ defineProps({
   },
   iconSize: {
     type: String,
-    default: 16,
+    default: "16",
   },
 });
 </script>

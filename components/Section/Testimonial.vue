@@ -70,7 +70,7 @@ const testimonials = ref([
             />
             <div class="ml-4">
               <h4 class="text-lg font-semibold">{{ testimonial.name }}</h4>
-              <p class="text-sm opacity-80">
+              <p class="text-sm opacity-80 leading-tight">
                 {{ testimonial.designation }}
               </p>
             </div>
