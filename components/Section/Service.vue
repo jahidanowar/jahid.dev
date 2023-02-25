@@ -32,7 +32,7 @@ const services = ref([
       <p class="mt-2">
         I help businesses connect with audiences, delivering greater brand
         engagement <br class="hidden lg:block" />
-        through designing engaging web Apps.
+        through innovative digital solutions.
       </p>
     </div>
     <!-- ./ Heading  -->

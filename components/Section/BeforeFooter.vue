@@ -27,10 +27,13 @@ const socialLinks = ref([
   <section>
     <div class="container mx-auto">
       <div class="section-heading text-center heading-spacing !mb-14">
-        <h2>What people say about my work</h2>
+        <h2>
+          What people say <br class="lg:hidden" />
+          about my work
+        </h2>
         <p class="mt-3 inline-block">
-          I love hearing from my clients. Here is a selection of reviews just
-          in!
+          I love hearing from my clients. <br class="lg:hidden" />
+          Here is a selection of reviews just in!
         </p>
       </div>
       <div class="grid lg:grid-cols-12 gap-5">

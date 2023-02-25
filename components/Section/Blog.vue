@@ -8,8 +8,10 @@
       }"
     >
       <template #title>
-        Web Development Wisdom <br class="hidden lg:block" />
-        <span class="text-primary-500">Lessons Learned and Shared</span>
+        Web Development Wisdom <br />
+        <span class="lg:text-primary-500 text-base font-normal"
+          >Lessons Learned and Shared</span
+        >
       </template>
       <template #action>
         <span>View All</span>
