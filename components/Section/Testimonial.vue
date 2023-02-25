@@ -6,7 +6,8 @@ const testimonials = ref([
     name: "Hasan Alkhater",
     designation: "Co-Founder & COO, MacQueen",
     image: "/images/hasan-alkhater.jpg",
-    gradient: "from-orange-500 to-red-500",
+    gradient:
+      "from-teal-500/30 to-teal-500/30 !text-teal-500 bg-white dark:bg-black !border-teal-500/40",
   },
   {
     content:
@@ -14,7 +15,8 @@ const testimonials = ref([
     name: "Jaideep Hinduja",
     designation: "Director, Simext Technologies",
     image: "/images/jaideep-hinduja.jpg",
-    gradient: "from-teal-500 to-blue-500",
+    gradient:
+      "from-orange-500/20 to-red-500/20 !text-red-500/70 bg-white dark:bg-black !border-red-500/40 ",
   },
   {
     content:
@@ -22,7 +24,8 @@ const testimonials = ref([
     name: "James Gregory",
     designation: "Head Coach - Pure Heart Muay Thai",
     image: "/images/james-gregory.jpeg",
-    gradient: "from-purple-500 to-indigo-500",
+    gradient:
+      "from-purple-500/20 to-indigo-500/20 !text-indigo-500/70 bg-white dark:bg-black !border-indigo-500/40",
   },
   // {
   //   content:
@@ -51,7 +54,7 @@ const testimonials = ref([
       <SwiperSlide
         v-for="testimonial in testimonials"
         :key="testimonial.image"
-        class="dark:border-white/20 dark:border p-10 rounded-3xl bg-gradient-to-tr"
+        class="dark:border-white/20 border p-10 rounded-3xl bg-gradient-to-tr"
         :class="testimonial.gradient"
       >
         <div class="testimonial-wrapper min-h-[280px] lg:py-5">
@@ -67,7 +70,7 @@ const testimonials = ref([
             />
             <div class="ml-4">
               <h4 class="text-lg font-semibold">{{ testimonial.name }}</h4>
-              <p class="text-sm dark:text-white/60">
+              <p class="text-sm opacity-80">
                 {{ testimonial.designation }}
               </p>
             </div>

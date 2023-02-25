@@ -110,5 +110,8 @@ const services = ref([
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* fixed
+   */
+  background-attachment: fixed;
 }
 </style>

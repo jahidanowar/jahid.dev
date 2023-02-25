@@ -16,7 +16,7 @@ defineProps<{
       loading="lazy"
     ></NuxtImg>
     <div
-      class="absolute inset-0 bg-gradient-to-t from-black to-black/10 group-hover:to-black/20 transition-all duration-500 flex flex-col justify-end p-4 z-2 cursor-pointer"
+      class="absolute inset-0 bg-gradient-to-t from-gray-800 to-gray-100/10 dark:from-black dark:to-black/10 group-hover:to-black/20 transition-all duration-500 flex flex-col justify-end p-4 z-2 cursor-pointer"
     >
       <div class="p-5 text-white">
         <h3>{{ video.title }}</h3>
