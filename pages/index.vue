@@ -7,7 +7,7 @@
     <!-- ./ Hero Section  -->
 
     <!-- Service Section -->
-    <SectionServic class="section-spacing" />
+    <SectionService class="section-spacing" />
     <!-- ./ Service Section -->
 
     <!-- Blog Section  -->
