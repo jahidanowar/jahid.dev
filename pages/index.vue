@@ -7,19 +7,19 @@
     <!-- ./ Hero Section  -->
 
     <!-- Service Section -->
-    <SectionService />
+    <SectionServic class="section-spacing" />
     <!-- ./ Service Section -->
 
     <!-- Blog Section  -->
-    <SectionBlog />
+    <SectionBlog class="section-spacing" />
     <!-- ./ Blog Section -->
 
     <!-- Video Section -->
-    <SectionVideo class="mt-20" />
+    <SectionVideo class="section-spacing" />
     <!-- ./ Video Section  -->
 
     <!-- Testimonaial & CTA  -->
-    <SectionBeforeFooter class="my-20" />
+    <SectionBeforeFooter class="section-spacing" />
     <!-- ./ Testimonaial & CTA  -->
   </main>
 </template>

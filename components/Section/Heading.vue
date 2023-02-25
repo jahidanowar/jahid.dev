@@ -12,7 +12,7 @@ defineProps<{
 
 <template>
   <div
-    class="section-heading mb-10"
+    class="section-heading heading-spacing"
     :class="
       action
         ? 'flex items-center md:justify-between md:items-end flex-col md:flex-row gap-5'

@@ -1,5 +1,5 @@
 <template>
-  <div class="container pb-12">
+  <div class="container">
     <SectionHeading
       title="Blogs"
       :action="{

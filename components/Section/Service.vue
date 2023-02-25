@@ -22,9 +22,9 @@ const services = ref([
 </script>
 
 <template>
-  <div class="container pb-24">
+  <div class="container">
     <!-- Heading  -->
-    <div class="text-center">
+    <div class="heading text-center heading-spacing">
       <h2>
         Things I do and<br class="lg:hidden" />
         brag about
@@ -38,7 +38,7 @@ const services = ref([
     <!-- ./ Heading  -->
 
     <!-- Services  -->
-    <div class="grid md:grid-cols-3 gap-5 lg:gap-10 mt-14">
+    <div class="grid md:grid-cols-3 gap-5 lg:gap-10">
       <div
         v-for="(service, i) in services"
         class="md:col-span-1 border p-5 rounded-3xl transition-all duration-300 bg-gray-100 dark:border-white/10 dark:bg-white/5"

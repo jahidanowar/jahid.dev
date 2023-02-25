@@ -16,7 +16,7 @@
       v-slot="{ list }"
     >
       <div class="grid lg:grid-cols-2 gap-5 lg:gap-12">
-        <div class="text-center md:text-left lg:px-10">
+        <div class="text-center md:text-left lg:px-10 heading-spacing">
           <h2>Code with me</h2>
           <p class="mt-2">Learn coding through interactive video lessons</p>
           <ButtonIcon class="mt-5" nuxt-link to="/video">View All</ButtonIcon>
@@ -25,7 +25,7 @@
           v-for="video in list"
           :key="video._path"
           :video="video"
-          class="border-2 dark:border-white/10"
+          class="border dark:border-white/10"
         />
       </div>
     </ContentList>
@@ -36,7 +36,7 @@
 
 <style scoped>
 .video-card:nth-child(2n + 3) {
-  margin-top: -35%;
+  margin-top: -38%;
 }
 
 @media screen and (max-width: 768px) {
