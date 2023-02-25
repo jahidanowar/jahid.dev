@@ -38,7 +38,7 @@ const services = ref([
     <!-- ./ Heading  -->
 
     <!-- Services  -->
-    <div class="grid md:grid-cols-3 gap-5 lg:gap-10 mt-10">
+    <div class="grid md:grid-cols-3 gap-5 lg:gap-10 mt-14">
       <div
         v-for="(service, i) in services"
         class="md:col-span-1 border p-5 rounded-3xl transition-all duration-300 bg-gray-100 dark:border-white/10 dark:bg-white/5"
@@ -81,7 +81,7 @@ const services = ref([
         ></div> -->
       </div>
       <div
-        class="lg:col-span-1 py-5 px-8 text-center rounded-3xl bg-gradient-to-r from-primary-600 to-teal-600 flex flex-col justify-center items-center text-white"
+        class="lg:col-span-1 py-5 px-8 text-center rounded-3xl bg-gradient-to-r from-primary-500 to-teal-500 dark:from-primary-600 dark:to-teal-600 flex flex-col justify-center items-center text-white"
       >
         <Icon name="ic:outline-waving-hand" size="40" />
         <h3 class="my-2">Say Hello</h3>

@@ -18,11 +18,8 @@
     <SectionVideo class="mt-20" />
     <!-- ./ Video Section  -->
 
-    <!-- Project Section Section  -->
-
-    <!-- ./ Project Section  -->
-
-    <!-- CTA  -->
-    <!-- ./ CTA  -->
+    <!-- Testimonaial & CTA  -->
+    <SectionBeforeFooter class="my-20" />
+    <!-- ./ Testimonaial & CTA  -->
   </main>
 </template>
