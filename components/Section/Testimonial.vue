@@ -18,20 +18,20 @@ const testimonials = ref([
   },
   {
     content:
-      "I come to Jahid for eCommerce WordPress website development. The way of talking is super awesome, really impressive. When I saw the final work I was shocked, such a professional work at a reasonable prices. Highly recommended for any WordPress website development and designing Project.",
+      "I come to Jahid for eCommerce website development. The way of talking is super awesome, really impressive. When I saw the final work I was shocked, such a professional work at a reasonable prices. Highly recommended for any website development and designing Project.",
     name: "James Gregory",
     designation: "Head Coach - Pure Heart Muay Thai",
     image: "/images/james-gregory.jpeg",
     gradient: "from-purple-500 to-indigo-500",
   },
-  {
-    content:
-      "I really like working with Jahid. He has a lot of experience with WordPress, is friendly and doesn't stop working until you are completely satisfied with the result.",
-    name: "Duelen",
-    designation: "Entrepreneur & Digital Marketer",
-    image: "/images/duelen.jpg",
-    gradient: "from-pink-500 to-red-500",
-  },
+  // {
+  //   content:
+  //     "I really like working with Jahid. He has a lot of experience with WordPress, is friendly and doesn't stop working until you are completely satisfied with the result.",
+  //   name: "Duelen",
+  //   designation: "Entrepreneur & Digital Marketer",
+  //   image: "/images/duelen.jpg",
+  //   gradient: "from-pink-500 to-red-500",
+  // },
 ]);
 </script>
 
@@ -46,7 +46,7 @@ const testimonials = ref([
         delay: 4000,
         disableOnInteraction: true,
       }"
-      class="w-[320px] lg:w-full"
+      class="w-[320px] sm:w-[340px] lg:w-full"
     >
       <SwiperSlide
         v-for="testimonial in testimonials"
@@ -55,13 +55,13 @@ const testimonials = ref([
         :class="testimonial.gradient"
       >
         <div class="testimonial-wrapper min-h-[280px] lg:py-5">
-          <p class="text-md lg:text-xl">
+          <p class="text-base lg:text-xl">
             {{ testimonial.content }}
           </p>
           <div class="testimonial-meta flex items-center mt-8">
             <NuxtImg
               :src="testimonial.image"
-              class="rounded-full"
+              class="rounded-full w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]"
               width="100"
               height="100"
             />
