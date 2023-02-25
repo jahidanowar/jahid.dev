@@ -46,7 +46,7 @@ const testimonials = ref([
         delay: 4000,
         disableOnInteraction: true,
       }"
-      class="w-[380px] lg:w-full"
+      class="w-[320px] lg:w-full"
     >
       <SwiperSlide
         v-for="testimonial in testimonials"

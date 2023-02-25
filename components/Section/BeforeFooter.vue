@@ -20,11 +20,6 @@ const socialLinks = ref([
     link: "https://jahid.dev/go/gh",
     icon: "bi:github",
   },
-  {
-    name: "instagram",
-    link: "https://jahid.dev/go/ig",
-    icon: "bi:instagram",
-  },
 ]);
 </script>
 
