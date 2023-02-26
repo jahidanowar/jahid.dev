@@ -25,7 +25,7 @@ const testimonials = ref([
     designation: "Head Coach - Pure Heart Muay Thai",
     image: "/images/james-gregory.jpeg",
     gradient:
-      "from-purple-500/20 to-indigo-500/20 !text-indigo-500/70 bg-white dark:bg-black !border-indigo-500/40",
+      "from-purple-500/20 to-indigo-500/20 !text-indigo-400 bg-white dark:bg-black !border-indigo-500/40",
   },
   // {
   //   content:

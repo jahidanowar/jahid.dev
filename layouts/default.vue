@@ -5,5 +5,6 @@
     <!-- Main Area  -->
     <NuxtPage />
     <!-- ./  Main Area  -->
+    <GlobalAppFooter />
   </div>
 </template>
