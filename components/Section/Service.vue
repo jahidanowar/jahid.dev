@@ -71,7 +71,7 @@ const services = ref([
             <img
               src="https://jahid.dev/_nuxt/image/57fe2d.png"
               alt="Brands I have worked with"
-              class="mx-auto w-full mt-2"
+              class="mx-auto w-full mt-2 filter brightness-0 invert"
             />
           </div>
         </div>

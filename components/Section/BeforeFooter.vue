@@ -6,14 +6,14 @@ const socialLinks = ref([
     icon: "bi:youtube",
   },
   {
+    name: "discord",
+    link: "https://jahid.dev/go/d",
+    icon: "bi:discord",
+  },
+  {
     name: "twitter",
     link: "https://jahid.dev/go/tw",
     icon: "bi:twitter",
-  },
-  {
-    name: "linkedin",
-    link: "https://jahid.dev/go/li",
-    icon: "bi:linkedin",
   },
   {
     name: "github",

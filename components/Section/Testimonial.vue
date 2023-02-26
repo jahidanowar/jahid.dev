@@ -57,7 +57,9 @@ const testimonials = ref([
         class="dark:border-white/20 border p-10 rounded-3xl bg-gradient-to-tr"
         :class="testimonial.gradient"
       >
-        <div class="testimonial-wrapper min-h-[280px] lg:py-5">
+        <div
+          class="testimonial-wrapper min-h-[280px] lg:py-5 cursor-grab focus:cursor-grabbing"
+        >
           <p class="text-base lg:text-xl">
             {{ testimonial.content }}
           </p>
