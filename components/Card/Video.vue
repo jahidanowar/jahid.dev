@@ -28,14 +28,14 @@ defineProps<{
           <div class="inline-flex items-center">
             <Icon
               :name="
-                video.type === 'playlist'
+                video.type === 'course'
                   ? 'heroicons:rectangle-stack'
                   : 'heroicons:play'
               "
               size="16"
             />
             <span class="ml-1 text-sm">{{
-              video.type === "playlist"
+              video.type === "course"
                 ? video.videos.length + " Lessons"
                 : "Single Lesson"
             }}</span>

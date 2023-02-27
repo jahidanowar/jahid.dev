@@ -1,17 +1,15 @@
 ---
-title: Nuxt 3 URL Shortener App Course
-description: Learn how to build a URL shortener app with Nuxt 3, Tailwind CSS, and Firebase.
-author: Jahid
+title: Nuxt 3 WordPress Blog Course
+description: Learn how to build a WordPress blog with Nuxt 3, Tailwind CSS, and WordPress REST API.
 date: 2023-02-23
-type: playlist
+type: course
 videos: [
-"https://www.youtube.com/embed/A3OO1ZVLRjA",
-"https://www.youtube.com/embed/rAq9xJTB0P8"
+"https://www.youtube.com/embed/fY2sfrV2zho",
 ]
-tags: ["Nuxt", "Supabase", "Tailwind CSS"," URL Shortener"]
+tags: ["Nuxt", "WordPress", "Tailwind CSS"," WordPress Blog"]
 source: "https://github.com/jahidanowar/shrty"
 demo: "https://shrty.vercel.app/"
-image: "/images/video/nuxt3-url-shortener-app.jpeg"
+image: "/images/video/nuxt3-wordpress.jpeg"
 ---
 
 In this tutorial, we will be building a URL shortener web app using Nuxt.js, Supabase and Tailwind CSS. We will set up the development environment, integrate Supabase for database and user authentication, implement core functionality and learn how to use Nuxt's features to create a fast, efficient and scalable web app. By the end of this tutorial, you will have a solid understanding of how to use Nuxt, Supabase, and Tailwind CSS to build professional and functional web apps.

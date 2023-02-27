@@ -3,7 +3,7 @@
   <div class="container pb-12 overflow-x-hidden">
     <!-- Video List  -->
     <ContentList
-      path="/video"
+      path="/videos"
       :query="{
         limit: 5,
         fields: ['title', 'image', 'date', 'type'],

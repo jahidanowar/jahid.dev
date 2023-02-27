@@ -1,7 +1,7 @@
 <script setup lang="ts">
-const video = await queryContent("video")
+const video = await queryContent("videos")
   .where({
-    type: "playlist",
+    type: "course",
   })
   .only(["title", "_path"])
   .find();

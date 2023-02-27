@@ -2,7 +2,7 @@ interface Video {
   _path: string;
   title: string;
   description: string;
-  type: "single" | "playlist";
+  type: "single" | "course";
   image: string;
   videos: string[];
   date: string;
