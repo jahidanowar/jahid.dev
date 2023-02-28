@@ -37,38 +37,34 @@ Create a Vue app
 
 Add Tailwind CSS for Design
 
-```
+```bash
 cd my-vue-app
 ```
 
 Create Tailwind Config file
 
-```
+```bash
 npx tailwindcss init -p
 ```
 
 Create a CSS file
 
-```
-
+```css
 /* ./src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 ```
 
 Update the main.js file
 
-```
-
+```js
 // src/main.js
-import { createApp } from 'vue'
-import App from './App.vue'
-import './index.css'
+import { createApp } from "vue";
+import App from "./App.vue";
+import "./index.css";
 
-createApp(App).mount('#app')
-
+createApp(App).mount("#app");
 ```
 
 Now that we have our basic setup let's add some HTML markup for our input field. If you're looking for a quick and easy way to add an OTP input field to your Vue 3 application, look no further than Tailwind CSS. In just a few lines of code, you can have a fully-functional OTP input field that looks great and is easy to use. Here's how to do it.
@@ -79,31 +75,35 @@ Create a file
 
 Add the markups
 
-```
+```vue
 <template>
- <div class="otp w-full flex justify-around">
-  <input ref="firstInputEl" type="text" maxlength="1" class="border rounded w-10 h-10 text-center"/>
- </div>
+  <div class="otp w-full flex justify-around">
+    <input
+      ref="firstInputEl"
+      type="text"
+      maxlength="1"
+      class="border rounded w-10 h-10 text-center"
+    />
+  </div>
 </template>
-
 ```
 
 Running the above code will show you a simple div with a single Input field.
 
 Now let's add a prop so that we can reuse the component for different lengths of verification code.
 
-```
+```vue
 <script lang="ts" setup>
-import { ref, watch } from 'vue';
-const props = defineProps<{ fields: number; }>();
+import { ref, watch } from "vue";
+const props = defineProps<{ fields: number }>();
 const data = ref([]);
 
 const handleOtpInput = (e) => {
-// HANDLE OTP INPUT
+  // HANDLE OTP INPUT
 };
 const handlePaste = (e) => {
-// HANDLE PASTE EVENT
-}
+  // HANDLE PASTE EVENT
+};
 </script>
 ```
 
@@ -111,13 +111,12 @@ We have defined a props name field this would be used to specify the number of O
 
 Change the template as follows.
 
-```
+```vue
 <div class="otp w-full flex justify-around" @input="handleOtpInput">
  <template v-for="field in fields" :key="field">
   <input v-model="data[field - 1]" ref="firstInputEl" type="text" maxlength="1" class="border rounded w-10 h-10 text-center" @paste="field === 1 && handlePaste($event)" />
  </template>
 </div>
-
 ```
 
 In the above code, we are looping through the fields and creating multiple input fields. In the v-model, we are assigning it to our state variable `data`
@@ -130,10 +129,10 @@ We have added the `@paste` event handler at the first input field so that we can
 
 ### Definition of `@input` event
 
-```
+```js
 const handleOtpInput = (e) => {
   if (e.data && e.target.nextElementSibling) {
-      e.target.nextElementSibling.focus();
+    e.target.nextElementSibling.focus();
   } else if (e.data == null && e.target.previousElementSibling) {
     e.target.previousElementSibling.focus();
   }
@@ -144,9 +143,9 @@ In handleOtpInput, we are checking for the input value if that is present and fo
 
 ### Definition of `@paste` event
 
-```
+```js
 const handlePaste = (e) => {
-  const pasteData = e.clipboardData.getData('text');
+  const pasteData = e.clipboardData.getData("text");
   let nextEl = firstInputEl.value[0].nextElementSibling;
   for (let i = 1; i < pasteData.length; i++) {
     if (nextEl) {
@@ -163,21 +162,21 @@ We are almost done now the only thing we need to do is send the entered data to 
 
 Add the watcher and emit the event to the parent.
 
-```
+```js
 watch(
-() => data,
-(newVal) => {
- if (
-  newVal.value != '' &&
-  newVal.value.length === props.fields &&
-  !newVal.value.includes('')
- ) {
-  emit('update:modelValue', Number(newVal.value.join('')));
- } else {
- emit('update:modelValue', null);
- }
-},
-{ deep: true }
+  () => data,
+  (newVal) => {
+    if (
+      newVal.value != "" &&
+      newVal.value.length === props.fields &&
+      !newVal.value.includes("")
+    ) {
+      emit("update:modelValue", Number(newVal.value.join("")));
+    } else {
+      emit("update:modelValue", null);
+    }
+  },
+  { deep: true }
 );
 ```
 

@@ -36,7 +36,22 @@ export default defineNuxtConfig({
   /**
    * Nuxt Content
    */
-  content: {},
+  content: {
+    // documentDriven: true,
+    highlight: {
+      // Theme used in all color schemes.
+      // theme: "one-dark-pro",
+      // OR
+      theme: {
+        // Default theme (same as single string)
+        default: "one-dark-pro",
+        // Theme used if `html.dark`
+        dark: "one-dark-pro",
+        // Theme used if `html.light`
+        light: "github-light",
+      },
+    },
+  },
 
   /**
    * Nuxt Image

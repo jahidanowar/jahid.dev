@@ -31,12 +31,10 @@ Our Page design is done now we need it to configure it.
 
 Go to **nuxt.config.js** and add the following
 
-```
-
+```js
 generate: {
-  fallback: true
+  fallback: true;
 }
-
 ```
 
 It will create a 404 page and set the default fallback to 404.html you can read more about it here.
@@ -51,15 +49,14 @@ If you haven't handled the error properly, then the custom 404 page will not wor
 
 To solve this issue, you can use **try{}catch(){}** block and handle the exception like this
 
-```
-
+```js
 async asyncData({ $axios, params, error }) {
-try{
-const posts = await $axios.$get('HTTP_URL')
-return { PRPERTY }
-}catch(){
-return error({ statusCode: 404, message: 'Page not found' })
-}
+  try {
+    const posts = await $axios.$get('HTTP_URL')
+    return { PRPERTY }
+  } catch(){
+    return error({ statusCode: 404, message: 'Page not found' })
+  }
 }
 
 ```

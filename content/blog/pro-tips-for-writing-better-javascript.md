@@ -13,6 +13,12 @@ tags:
   ]
 ---
 
+```js
+export default () => {
+  console.log("Code block");
+};
+```
+
 Hi there, and welcome to this JavaScript blog. In this post, we're going to be discussing five pro tips that you can use to write better, more efficient, and more maintainable JavaScript code.
 
 First, we're going to talk about the importance of using code linting tools. These tools automatically check your code for potential errors, inconsistencies, and other issues, and can help you catch and fix problems before they become bigger problems.
