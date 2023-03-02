@@ -4,8 +4,9 @@ defineProps<{
 }>();
 </script>
 <template>
-  <div
-    class="rounded-3xl relative w-full h-[250px] lg:h-[340px] overflow-hidden shadow-xl group video-card"
+  <NuxtLink
+    :to="video._path"
+    class="block rounded-3xl relative w-full h-[250px] lg:h-[340px] overflow-hidden shadow-xl group video-card"
   >
     <NuxtImg
       :src="video.image"
@@ -48,5 +49,5 @@ defineProps<{
         class="absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white z-3 group-hover:text-primary-400 transition duration-300 ease-in-out group-hover:scale-110 bg-white/10 rounded-full p-4 backdrop-filter backdrop-blur-sm"
       />
     </div>
-  </div>
+  </NuxtLink>
 </template>

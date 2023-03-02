@@ -3,6 +3,7 @@ title: "How to create your own Heroku alternative on DigitalOcean"
 date: "2022-10-09"
 image: "/images/blog/heroku-alternative-with-dokku-on-digitalocean-2.webp"
 excerpt: "Looking for an alternative to Heroku? Check out how to create your own Heroku alternative on DigitalOcean. Dokku is an amazing open-source project that brings the power of Heroku to your own server."
+author: "Jahid Anowar"
 tags: ["dokku", "heroku", "digitalocean", "devOps", "dokku alternative"]
 ---
 

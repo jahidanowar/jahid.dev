@@ -5,9 +5,10 @@ author: Jahid
 date: 2023-02-23
 type: course
 videos: [
-"https://www.youtube.com/embed/A3OO1ZVLRjA",
-"https://www.youtube.com/embed/rAq9xJTB0P8"
+"A3OO1ZVLRjA",
+"rAq9xJTB0P8"
 ]
+playlist: "PLYktmUPNARbr_MoQRTR469XghqNBl4vF8"
 tags: ["Nuxt", "Supabase", "Tailwind CSS"," URL Shortener"]
 source: "https://github.com/jahidanowar/shrty"
 demo: "https://shrty.vercel.app/"

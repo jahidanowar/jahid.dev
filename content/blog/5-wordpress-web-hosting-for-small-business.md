@@ -3,6 +3,7 @@ title: "5-wordpress-web-hosting-for-small-business"
 date: "2020-05-20"
 image: "/images/blog/top-5-best-wordpress-web-hosting-for-small-business.webp"
 excerpt: "Top 5 Best WordPress Web Hosting for Low Traffic Website. List of Best WordPress Web Hosting Provider for Small Business."
+author: "Jahid Anowar"
 tags: ["wordpress", "web hosting", "small business"]
 ---
 

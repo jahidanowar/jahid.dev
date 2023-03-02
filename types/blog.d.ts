@@ -6,4 +6,5 @@ interface Blog {
   date: string;
   tags: string[];
   content?: string;
+  author?: string;
 }

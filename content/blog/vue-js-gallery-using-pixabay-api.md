@@ -3,17 +3,8 @@ title: "How to create a Vue JS Gallery Web App using Pixabay API"
 date: "2020-05-16"
 image: "/images/blog/vuejs-photo-gallery-web-apps-using-pixabay-api.webp"
 excerpt: "How to Create VueJs Photo Gallery Web Application using Pixabay Photo API where users can search and download the image. We have used pixabay API with Axios."
-tags:
-  [
-    "vuejs",
-    "vue js",
-    "vue js gallery",
-    "vue js pixabay gallery",
-    "vue js pixabay api",
-    "vue js gallery api",
-    "vue js gallery pixabay",
-    "vue js gallery pixabay api",
-  ]
+author: "Jahid Anowar"
+tags: ["vuejs"]
 ---
 
 If you are a Beginner in Vue JS and want to build something with your newly acquired skill then this Tutorial is for you.

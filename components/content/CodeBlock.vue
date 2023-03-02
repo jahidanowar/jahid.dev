@@ -8,7 +8,7 @@
 
 <style scoped>
 .code-block:before {
-  @apply absolute top-2 right-3 z-2 text-sm text-gray-500;
+  @apply absolute top-2 right-3 text-sm text-gray-500;
   content: attr(data-language);
 }
 

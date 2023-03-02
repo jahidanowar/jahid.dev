@@ -3,6 +3,7 @@ title: "Is PHP a Dead Language? Statistics say otherwise"
 date: "2022-02-22"
 image: "/images/blog/is-php-dead-language.webp"
 excerpt: "PHP is a powerful, open-source programming language that is widely used for web development. This article will explore the reasons behind this belief and determine whether or not PHP is truly a dead language."
+author: "Jahid Anowar"
 tags: ["php", "php dead", "php dead language", "php dead language 2022"]
 ---
 

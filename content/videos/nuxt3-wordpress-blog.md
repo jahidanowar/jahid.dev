@@ -4,7 +4,7 @@ description: Learn how to build a WordPress blog with Nuxt 3, Tailwind CSS, and 
 date: 2023-02-23
 type: course
 videos: [
-"https://www.youtube.com/embed/fY2sfrV2zho",
+"fY2sfrV2zho",
 ]
 tags: ["Nuxt", "WordPress", "Tailwind CSS"," WordPress Blog"]
 source: "https://github.com/jahidanowar/shrty"

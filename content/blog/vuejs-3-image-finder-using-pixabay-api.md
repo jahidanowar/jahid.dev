@@ -3,18 +3,8 @@ title: "Creating Vue.js 3 Image Finder Web App Using Pixabay API"
 date: "2022-02-22"
 image: "/images/blog/vuejs-3-image-finder-app-using-pixabay-api-and-bootstrap-1.jpg"
 excerpt: "Vue 3 comes with awesome sets of features that can be used to ease our frontend development process. I will demonstrate Vue.js 3 by building a Image searching web app using Pixabay API."
-tags:
-  [
-    "vuejs",
-    "vue js",
-    "vue js 3",
-    "vue js 3 image finder",
-    "vue js 3 pixabay",
-    "vue js 3 pixabay api",
-    "vue js 3 image finder api",
-    "vue js 3 image finder pixabay",
-    "vue js 3 image finder pixabay api",
-  ]
+author: "Jahid Anowar"
+tags: ["vuejs", "vue js", "vue js 3", "vue js 3 image finder"]
 ---
 
 Vue.js 2 was really good. It is easier to create web applications with its option API. I already created a tutorial on How to create a [Vue.js 2 Image searching web app using Pixabay](https://jahid.dev/blog/vue-js-gallery-using-pixabay-api). Now we are going to translate the same into Vue.js 3. So let's get ready for some Vue 3 magic ?

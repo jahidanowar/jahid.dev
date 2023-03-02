@@ -90,3 +90,71 @@ Spaicing
 .section-spacing{
     @apply mb-14 lg:mb-20;
 }
+
+/**
+* Content
+*/
+.content {
+    @apply text-base dark:text-white/80;
+  }
+.content p,
+.content ul,
+.content ol,
+.content pre,
+.content iframe {
+@apply mb-4;
+}
+[itemprop="text"] {
+}
+.content ul {
+list-style-type: disc;
+padding: 0 0 0 21px;
+margin: 32px 0;
+}
+.content ul li {
+@apply mb-2;
+}
+.content ul li::marker {
+@apply text-black/40 dark:text-white/50;
+}
+
+.content ol {
+list-style-type: decimal;
+padding: 0 0 0 21px;
+}
+.content ol li {
+@apply mb-2;
+}
+.content ol li::marker {
+@apply text-white/50;
+}
+
+.content * {
+scroll-margin-top: 100px;
+}
+.content img {
+@apply my-4 bg-white rounded-xl;
+}
+
+.content a {
+@apply border-b hover:border-primary-500;
+}
+
+.content h2 a,
+.content h3 a,
+.content h4 a,
+.content h5 a,
+.content h6 a {
+@apply border-none;
+}
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+@apply mb-4;
+}
+
+.content pre {
+@apply bg-gray-200 dark:bg-white/10 rounded-xl p-4 overflow-x-auto;
+}
