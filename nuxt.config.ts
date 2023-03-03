@@ -17,6 +17,13 @@ export default defineNuxtConfig({
           rel: "stylesheet",
         },
       ],
+      script: [
+        {
+          src: "https://www.youtube.com/iframe_api",
+          defer: true,
+          type: "text/javascript",
+        },
+      ],
     },
   },
 
@@ -30,6 +37,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/image-edge",
     "@nuxtjs/i18n",
+    "@nuxtjs/partytown",
     "nuxt-swiper",
   ],
 

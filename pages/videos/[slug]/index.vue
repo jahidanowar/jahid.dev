@@ -3,16 +3,6 @@ const slug = useRoute().params.slug as string;
 
 const { query } = useRoute();
 
-useHead({
-  title: "Video",
-  script: [
-    {
-      src: "https://www.youtube.com/iframe_api",
-      defer: true,
-    },
-  ],
-});
-
 const { data } = await useAsyncData(slug, () =>
   queryContent(`/videos/${slug}`).findOne()
 );
@@ -159,7 +149,9 @@ onMounted(() => {
     <!-- Video Description  -->
     <div class="mx-auto max-w-4xl mt-10">
       <div class="content">
-        <ContentRenderer :value="data" class="content" />
+        <ContentRenderer :value="data" class="content">
+          <template #empty> </template>
+        </ContentRenderer>
       </div>
     </div>
     <!-- ./ Video Description  -->
