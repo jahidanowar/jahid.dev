@@ -15,6 +15,10 @@ if (!data.value) {
 
 <template>
   <div class="single blog blog-single py-32">
+    <Head>
+      <Title>{{ data?.title }}</Title>
+      <Meta name="description" :content="data?.excerpt" />
+    </Head>
     <article class="container mx-auto" v-if="data">
       <!-- Blog Header  -->
       <header class="mx-auto max-w-3xl mb-10">

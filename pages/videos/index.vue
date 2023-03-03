@@ -1,5 +1,12 @@
 <template>
   <div class="archive blog blog-archive py-24">
+    <Head>
+      <Title>{{ $t("videos") }}</Title>
+      <Meta
+        name="description"
+        content="Learn Programming through Video Lessons"
+      />
+    </Head>
     <!-- Page Hero  -->
     <SectionPageHero
       title="Code with me"

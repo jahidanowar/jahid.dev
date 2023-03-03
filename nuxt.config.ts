@@ -17,13 +17,6 @@ export default defineNuxtConfig({
           rel: "stylesheet",
         },
       ],
-      script: [
-        {
-          src: "https://www.youtube.com/iframe_api",
-          defer: true,
-          type: "text/javascript",
-        },
-      ],
     },
   },
 

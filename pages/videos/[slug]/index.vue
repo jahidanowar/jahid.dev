@@ -1,11 +1,28 @@
 <script setup lang="ts">
 const slug = useRoute().params.slug as string;
-
 const { query } = useRoute();
 
 const { data } = await useAsyncData(slug, () =>
   queryContent(`/videos/${slug}`).findOne()
 );
+
+useHead({
+  title: data.value?.title,
+  meta: [
+    {
+      hid: "description",
+      name: "description",
+      content: data.value?.description,
+    },
+  ],
+  script: [
+    {
+      src: "https://www.youtube.com/iframe_api",
+      defer: true,
+      type: "text/javascript",
+    },
+  ],
+});
 
 const currentVideo = ref(0);
 const showSidebar = ref(false);
