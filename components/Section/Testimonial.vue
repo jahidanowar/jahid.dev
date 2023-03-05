@@ -40,45 +40,25 @@ const testimonials = ref([
 
 <template>
   <div class="testimonials">
-    <Swiper
-      :modules="[SwiperAutoplay, SwiperEffectCards]"
-      :slides-per-view="1"
-      :loop="true"
-      :effect="'cards'"
-      :autoplay="{
-        delay: 4000,
-        disableOnInteraction: true,
-      }"
-      class="w-[320px] sm:w-[340px] lg:w-full"
-    >
-      <SwiperSlide
-        v-for="testimonial in testimonials"
-        :key="testimonial.image"
-        class="dark:border-white/20 border p-10 rounded-3xl bg-gradient-to-tr"
-        :class="testimonial.gradient"
+    <ClientOnly>
+      <Swiper
+        :modules="[SwiperAutoplay, SwiperEffectCards]"
+        :slides-per-view="1"
+        :loop="true"
+        :effect="'cards'"
+        :autoplay="{
+          delay: 4000,
+          disableOnInteraction: true,
+        }"
+        class="w-[320px] sm:w-[340px] lg:w-full"
       >
-        <div
-          class="testimonial-wrapper min-h-[280px] lg:py-5 cursor-grab focus:cursor-grabbing"
+        <SwiperSlide
+          v-for="testimonial in testimonials"
+          :key="testimonial.image"
         >
-          <p class="text-base lg:text-xl">
-            {{ testimonial.content }}
-          </p>
-          <div class="testimonial-meta flex items-center mt-8">
-            <NuxtImg
-              :src="testimonial.image"
-              class="rounded-full w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]"
-              width="100"
-              height="100"
-            />
-            <div class="ml-4">
-              <h4 class="text-lg font-semibold">{{ testimonial.name }}</h4>
-              <p class="text-sm opacity-80 leading-tight">
-                {{ testimonial.designation }}
-              </p>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>
-    </Swiper>
+          <CardTestimonial :testimonial="testimonial" />
+        </SwiperSlide>
+      </Swiper>
+    </ClientOnly>
   </div>
 </template>

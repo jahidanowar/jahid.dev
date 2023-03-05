@@ -4,10 +4,10 @@ const { t } = useI18n();
 const isOpen = ref(false);
 
 const navigation = ref<Navigation[]>([
-  {
-    label: t("navigation.projects"),
-    to: "/projects",
-  },
+  // {
+  //   label: t("navigation.projects"),
+  //   to: "/projects",
+  // },
   {
     label: t("navigation.blog"),
     to: "/blog",

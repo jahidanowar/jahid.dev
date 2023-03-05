@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
     "@nuxtjs/i18n",
     "@nuxtjs/partytown",
+    "@nuxtjs/supabase",
     "nuxt-swiper",
   ],
 
@@ -87,5 +88,12 @@ export default defineNuxtConfig({
     vueI18n: {
       fallbackLocale: "en",
     },
+  },
+
+  /**
+   * Supabase
+   */
+  supabase: {
+    // Options
   },
 });
