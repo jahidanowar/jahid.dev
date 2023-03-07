@@ -8,6 +8,13 @@
     "youtube": "Youtube",
     "video": "Video",
     "videos": "Videos",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "submit": "Submit",
+    "contact": "Contact",
+    "contact_success_message": "Your message has been sent successfully.",
     "navigation": {
         "blog": "Blog",
         "videos": "Videos",
@@ -15,6 +22,17 @@
         "about": "About",
         "contact": "Contact",
         "projects": "Projects"
+    },
+    "validation_error": {
+        "required": "The {field} field is required.",
+        "email": "The {field} must be a valid email address.",
+        "min": {
+            "string": "The {field} must be at least {min} characters."
+        },
+        "max": {
+            "string": "The {field} may not be greater than {max} characters."
+        }
+    
     }
     
 }

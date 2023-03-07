@@ -41,7 +41,9 @@ const socialLinks = ref([
             <div>
               <Logo class="h-[30px]" />
               <div class="text-lg mt-5">
-                Shaping world class websites, designs and experiences
+                Shaping world class websites, designs and experiences.<br />
+                Let's find out what I can do to support you build your next big
+                project.
               </div>
             </div>
             <!-- Social Links  -->
@@ -73,7 +75,7 @@ const socialLinks = ref([
                   type="email"
                   name="EMAIL"
                   id="email"
-                  class="form-control rounded-tl-xl rounded-bl-xl border-gray-300 dark:bg-white/10 dark:border-white/20 dark:placeholder-white/40 border-r-0"
+                  class="rounded-tl-xl rounded-bl-xl border-gray-300 dark:bg-white/10 dark:border-white/20 dark:placeholder-white/40 border-r-0"
                   placeholder="Enter your email"
                 />
                 <div

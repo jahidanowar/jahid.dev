@@ -19,10 +19,7 @@ defineProps({
 });
 </script>
 <template>
-  <button
-    v-if="!nuxtLink"
-    class="btn btn-default group inline-flex items-center"
-  >
+  <button v-if="!nuxtLink" class="btn group inline-flex items-center">
     <template v-if="iconPosition === 'left'">
       <slot name="icon">
         <Icon
@@ -43,7 +40,7 @@ defineProps({
       </slot>
     </template>
   </button>
-  <NuxtLink v-else class="btn btn-default group inline-flex items-center">
+  <NuxtLink v-else class="btn group inline-flex items-center">
     <template v-if="iconPosition === 'left'">
       <slot name="icon">
         <Icon
