@@ -20,6 +20,11 @@ const socialLinks = ref([
     link: "https://jahid.dev/go/gh",
     icon: "bi:github",
   },
+  {
+    name: "linkedin",
+    link: "https://jahid.dev/go/li",
+    icon: "bi:linkedin",
+  },
 ]);
 </script>
 
@@ -61,7 +66,7 @@ const socialLinks = ref([
                 :key="link.name"
                 :href="link.link"
                 target="_blank"
-                class="rounded-3xl p-5 bg-black/10 dark:bg-white/10 dark:hover:bg-white/20 duration-300 transition-all group"
+                class="rounded-2xl p-5 bg-black/10 dark:bg-white/10 dark:hover:bg-white/20 duration-300 transition-all group"
               >
                 <Icon
                   :name="link.icon"

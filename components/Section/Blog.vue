@@ -36,30 +36,31 @@
       }"
       v-slot="{ list }"
     >
-      <Swiper
-        :modules="[SwiperAutoplay]"
-        :space-between="20"
-        :loop="true"
-        :autoplay="{
-          delay: 4000,
-          disableOnInteraction: true,
-        }"
-        :breakpoints="{
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        }"
-      >
-        <SwiperSlide v-for="blog in list" :key="blog._path">
-          <CardBlog :blog="blog" />
-        </SwiperSlide>
-      </Swiper>
+      <ClientOnly>
+        <Swiper
+          :modules="[SwiperAutoplay]"
+          :space-between="20"
+          :loop="true"
+          :autoplay="{
+            delay: 4000,
+          }"
+          :breakpoints="{
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }"
+        >
+          <SwiperSlide v-for="blog in list" :key="blog._path">
+            <CardBlog :blog="blog" />
+          </SwiperSlide>
+        </Swiper>
+      </ClientOnly>
     </ContentList>
     <!-- ./ Blog List  -->
   </div>
