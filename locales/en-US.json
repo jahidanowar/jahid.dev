@@ -1,8 +1,8 @@
 {
     "hero_title": "Architecting the next generation of web applications",
     "hero_description": "I'm Jahid, a Full Stack Web Developer and Content Creator with a passion for building functional web and mobile applications. Join me on a journey of innovation, and caffeine-fueled creativity!",
-    "hero_button_primary": "Checkout blog",
-    "hero_button_secondary": "Watch videos",
+    "hero_button_primary": "Get in touch",
+    "hero_button_secondary": "Explore blog",
     "its_free": "It's free",
     "explore": "Explore",
     "youtube": "Youtube",
@@ -15,6 +15,7 @@
     "submit": "Submit",
     "contact": "Contact",
     "contact_success_message": "Your message has been sent successfully.",
+    "error_404_button": "Go back home",
     "navigation": {
         "blog": "Blog",
         "videos": "Videos",

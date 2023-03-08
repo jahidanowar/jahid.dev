@@ -1,6 +1,6 @@
 import { serverSupabaseClient } from "#supabase/server";
 
-export default eventHandler(async (event) => {
+export default defineEventHandler(async (event) => {
   const body = await readBody(event);
 
   if (!body.name || !body.email || !body.message) {

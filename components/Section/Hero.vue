@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const localPath = useLocalePath();
+</script>
 
 <template>
   <div
@@ -19,16 +21,19 @@
         {{ $t("hero_description") }}
       </p>
       <div class="flex my-6 flex-wrap justify-center gap-2">
-        <NuxtLink to="/blog/" class="btn btn-primary inline-flex items-center">
+        <NuxtLink
+          :to="localPath('/contact')"
+          class="btn btn-primary inline-flex items-center"
+        >
           <span>{{ $t("hero_button_primary") }}</span>
-          <Icon name="circum:bullhorn" size="20px" class="ml-2" />
+          <Icon name="system-uicons:flame" size="20px" class="ml-1" />
         </NuxtLink>
         <NuxtLink
-          to="/contact/"
+          :to="localPath('/blog')"
           class="ml-2 btn btn-default inline-flex items-xenter"
         >
           <span>{{ $t("hero_button_secondary") }}</span>
-          <Icon name="circum:video-on" size="20px" class="ml-2" />
+          <Icon name="system-uicons:newspaper" size="20px" class="ml-2" />
         </NuxtLink>
       </div>
     </div>
