@@ -14,7 +14,7 @@ const testimonials = ref([
       "Jahid understands the requirements quite well, and implementation is praiseworthy. He puts in his mind and gives real good practical suggestions. Would surely work on more projects with him in future. Recommend that one should try out his work. I believe you would like his work",
     name: "Jaideep Hinduja",
     designation: "Director, Simext Technologies",
-    image: "/images/jaideep-hinduja.jpg",
+    image: "/images/Jaideep-Hinduja.jpg",
     gradient:
       "from-orange-500/20 to-red-500/20 !text-red-500/70 bg-white dark:bg-black !border-red-500/40 ",
   },
