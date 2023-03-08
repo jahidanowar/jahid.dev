@@ -41,9 +41,7 @@ const socialLinks = ref([
             <div>
               <Logo class="h-[30px]" />
               <div class="text-lg mt-5">
-                Shaping world class websites, designs and experiences.<br />
-                Let's find out what I can do to support you build your next big
-                project.
+                Shaping world class websites, designs and experiences.
               </div>
             </div>
             <!-- Social Links  -->
