@@ -59,26 +59,20 @@ const services = ref([
 
     <!-- CTA  -->
     <div class="grid md:grid-cols-3 my-5 lg:my-10 gap-5 lg:gap-10">
-      <div class="md:col-span-2">
-        <div
-          class="py-5 px-10 rounded-3xl bg-white/10 text-center relative overflow-hidden clientele"
-        >
-          <div class="z-10 text-white">
-            <h3>Trusted by Brands Globally</h3>
-            <p class="mt-2">
-              Here are some organizations, I had a pleasure to work with.
-            </p>
-            <img
-              src="https://jahid.dev/_nuxt/image/57fe2d.png"
-              alt="Brands I have worked with"
-              class="mx-auto w-full mt-2 filter brightness-0 invert"
-            />
-          </div>
+      <div
+        class="md:col-span-2 py-5 px-10 rounded-3xl bg-white/10 text-center relative overflow-hidden clientele"
+      >
+        <div class="z-10 text-white">
+          <h3>Trusted by Brands Globally</h3>
+          <p class="mt-2">
+            Here are some organizations, I had a pleasure to work with.
+          </p>
+          <img
+            src="https://jahid.dev/_nuxt/image/57fe2d.png"
+            alt="Brands I have worked with"
+            class="mx-auto w-full mt-2 filter brightness-0 invert"
+          />
         </div>
-
-        <!-- <div
-          class="rounded-xl border p-5 my-10 border-slate-800 dark:bg-slate-900"
-        ></div> -->
       </div>
       <div
         class="lg:col-span-1 py-5 px-8 text-center rounded-3xl bg-gradient-to-r from-primary-500 to-teal-500 dark:from-primary-600 dark:to-teal-600 flex flex-col justify-center items-center text-white"

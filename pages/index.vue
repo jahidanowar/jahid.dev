@@ -15,7 +15,7 @@
     <!-- ./ Blog Section -->
 
     <!-- Video Section -->
-    <SectionVideo class="section-spacing" />
+    <!-- <SectionVideo class="section-spacing" /> -->
     <!-- ./ Video Section  -->
 
     <!-- Testimonaial & CTA  -->

@@ -58,9 +58,7 @@ export default defineNuxtConfig({
   /**
    * Nuxt Image
    */
-  image: {
-    provider: "netlify",
-  },
+  image: {},
 
   /**
    * Color Mode

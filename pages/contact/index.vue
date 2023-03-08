@@ -100,8 +100,18 @@ const handleSubmit = async (values: any, { resetForm }: any) => {
             @submit="handleSubmit"
           >
             <div class="grid md:grid-cols-2 md:gap-5">
-              <TextFormField name="name" type="text" :error="errors.name" />
-              <TextFormField name="email" type="email" :error="errors.email" />
+              <TextFormField
+                :label="$t('name')"
+                name="name"
+                type="text"
+                :error="errors.name"
+              />
+              <TextFormField
+                :label="$t('email')"
+                name="email"
+                type="email"
+                :error="errors.email"
+              />
             </div>
 
             <div class="form-group">

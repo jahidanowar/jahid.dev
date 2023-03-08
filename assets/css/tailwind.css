@@ -123,10 +123,10 @@ h6{
 Spaicing
 **/
 .heading-spacing{
-    @apply mb-8 lg:mb-10;
+    @apply mb-8 lg:mb-14;
 }
 .section-spacing{
-    @apply mb-14 lg:mb-20;
+    @apply mb-14 lg:mb-32;
 }
 
 /**
