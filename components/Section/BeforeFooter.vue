@@ -15,11 +15,11 @@ const socialLinks = ref([
     link: "https://jahid.dev/go/tw",
     icon: "bi:twitter",
   },
-  {
-    name: "github",
-    link: "https://jahid.dev/go/gh",
-    icon: "bi:github",
-  },
+  // {
+  //   name: "github",
+  //   link: "https://jahid.dev/go/gh",
+  //   icon: "bi:github",
+  // },
   {
     name: "linkedin",
     link: "https://jahid.dev/go/li",

@@ -15,13 +15,6 @@ useHead({
       content: data.value?.description,
     },
   ],
-  script: [
-    {
-      src: "https://www.youtube.com/iframe_api",
-      defer: true,
-      type: "text/javascript",
-    },
-  ],
 });
 
 const currentVideo = ref(0);
@@ -30,7 +23,7 @@ const player = ref();
 
 onMounted(() => {
   console.log("Mounted");
-  if (window.YT) {
+  if ((window as any).YT) {
     console.log("YT Loaded");
 
     const playerConfig: any = {

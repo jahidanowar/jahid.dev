@@ -1,11 +1,12 @@
 <script setup lang="ts">
-const video = await queryContent("videos")
-  .where({
-    type: "course",
-  })
-  .only(["title", "_path"])
-  .find();
+// const video = await queryContent("videos")
+//   .where({
+//     type: "course",
+//   })
+//   .only(["title", "_path"])
+//   .find();
 
+const { $localePath } = useNuxtApp();
 const socialLinks = ref([
   {
     name: "youtube",
@@ -99,34 +100,34 @@ const socialLinks = ref([
           <!-- ./ About Section  -->
           <!-- Links  -->
           <div class="lg:col-span-1 p-5">
-            <ul>
+            <h4>Quick Links</h4>
+            <ul class="mt-5">
               <li class="mb-5">
                 <NuxtLink to="/blog">Blog</NuxtLink>
               </li>
               <li class="mb-5">
-                <NuxtLink to="/video">Videos</NuxtLink>
+                <NuxtLink to="/videos">Videos</NuxtLink>
               </li>
               <li class="mb-5">
-                <NuxtLink to="/project">Projects</NuxtLink>
-              </li>
-              <li class="mb-5">
-                <NuxtLink to="/about">About</NuxtLink>
-              </li>
-              <li class="mb-5">
-                <NuxtLink to="/contact">Get in Touch</NuxtLink>
+                <NuxtLink to="/portfolio">Portfolio</NuxtLink>
               </li>
             </ul>
           </div>
           <!-- ./ Links  -->
-          <!-- Blog List -->
+          <!-- Support -->
           <div class="lg:col-span-1 p-5">
-            <ul>
-              <li v-for="blog in video" :key="blog._path" class="mb-5">
-                <NuxtLink :to="blog._path">{{ blog.title }}</NuxtLink>
-              </li>
-            </ul>
+            <h4>Contact</h4>
+            <p class="mt-5">
+              If you have any questions, or want to have a ☕️ with me, please
+              feel free to contact me.
+            </p>
+            <NuxtLink
+              :to="$localePath({ name: 'contact' })"
+              class="btn btn-default inline-block mt-5 font-"
+              >Let's have a chai ☕️</NuxtLink
+            >
           </div>
-          <!-- ./ Blog List -->
+          <!-- ./ Support -->
         </div>
         <!-- ./ Footer Grid  -->
       </div>

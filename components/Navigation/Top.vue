@@ -13,8 +13,8 @@ const navigation = ref<Navigation[]>([
     to: "/blog",
   },
   {
-    label: t("navigation.videos"),
-    to: "/videos",
+    label: t("navigation.projects"),
+    to: "/portfolio",
   },
   {
     label: t("navigation.contact"),
