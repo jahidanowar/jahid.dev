@@ -73,6 +73,7 @@ const localPath = useLocalePath();
                 class="bi bi-youtube transition-all duration-300 translate-y-5 group-hover:translate-y-0"
               />
               <a
+                href="https://www.youtube.com/@jahiddev?sub_confirmation=1"
                 class="text-white -translate-y-5 scale-0 group-hover:scale-100 group-hover:-translate-y-0 transition-all duration-300"
                 >{{ $t("its_free") }} 🔥</a
               >
