@@ -19,6 +19,18 @@ export default defineNuxtConfig({
       ],
     },
   },
+  extends: ["nuxt-seo-kit"],
+
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.APP_URL || "https://jahid.dev",
+      siteName: process.env.SITE_NAME || "Jahid Anowar",
+      siteDescription:
+        process.env.SITE_DESCRIPTION ||
+        "I’m Jahid Anowar, a Full Stack Web Developer, Programming for the last 4 years and have built 200+ human-centered websites and apps for businesses.",
+      language: "en-US", // prefer more explicit language codes like `en-AU` over `en`
+    },
+  },
 
   /**
    * Modules

@@ -1,7 +1,14 @@
 <script lang="ts" setup></script>
 <template>
   <main class="pt-20 lg:pt-0 overflow-hidden sm:overflow-auto">
-    <Title>Jahid - Full Stack Web Developer</Title>
+    <Head>
+      <Title>Jahid - Full Stack Web Developer</Title>
+      <Meta
+        name="description"
+        content="I’m Jahid Anowar, a Full Stack Web Developer, Programming for the last 4 years and have built 200+ human-centered websites and apps for businesses."
+      />
+    </Head>
+
     <!-- Hero Section  -->
     <SectionHero />
     <!-- ./ Hero Section  -->
