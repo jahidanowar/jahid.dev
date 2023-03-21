@@ -52,6 +52,7 @@ export default defineNuxtConfig({
     "@nuxtjs/partytown",
     "@nuxtjs/supabase",
     "nuxt-swiper",
+    "@vueuse/nuxt",
   ],
 
   /**

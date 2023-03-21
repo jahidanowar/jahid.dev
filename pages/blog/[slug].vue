@@ -54,6 +54,7 @@ if (!data.value) {
 
       <!-- Blog Content  -->
       <div class="mx-auto max-w-3xl">
+        <Toc :links="data.body.toc.links" class="mb-5" />
         <Prose>
           <ContentRenderer :value="data" class="content blog" />
         </Prose>
