@@ -83,9 +83,9 @@ const localPath = useLocalePath();
         <div
           class="p-4 w-full bg-white dark:bg-black/50 text-center flex justify-center bg-opacity-60 z-20"
         >
-          <h3>
+          <div class="text-xl">
             {{ $t("explore") + " " + $t("youtube") + " " + $t("videos") }}
-          </h3>
+          </div>
         </div>
       </div>
     </div>

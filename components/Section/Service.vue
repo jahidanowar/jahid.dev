@@ -67,8 +67,8 @@ const services = ref([
           <p class="mt-2">
             Here are some organizations, I had a pleasure to work with.
           </p>
-          <img
-            src="https://jahid.dev/_nuxt/image/57fe2d.png"
+          <NuxtImg
+            src="/images/clientele.png"
             alt="Brands I have worked with"
             class="mx-auto w-full mt-2 filter brightness-0 invert"
           />
