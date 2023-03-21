@@ -28,20 +28,6 @@ export default defineNuxtConfig({
   },
   extends: ["nuxt-seo-kit"],
 
-  runtimeConfig: {
-    emailFrom: process.env.EMAIL_FROM,
-    adminEmail: process.env.ADMIN_EMAIL,
-    sendGridApiKey: process.env.SENDGRID_API_KEY,
-    public: {
-      siteUrl: process.env.APP_URL || "https://jahid.dev",
-      siteName: process.env.SITE_NAME || "Jahid Anowar",
-      siteDescription:
-        process.env.SITE_DESCRIPTION ||
-        "I’m Jahid Anowar, a Full Stack Web Developer, Programming for the last 4 years and have built 200+ human-centered websites and apps for businesses.",
-      language: "en-US", // prefer more explicit language codes like `en-AU` over `en`
-    },
-  },
-
   /**
    * Modules
    */
@@ -57,6 +43,24 @@ export default defineNuxtConfig({
     "nuxt-swiper",
     "@vueuse/nuxt",
   ],
+
+  runtimeConfig: {
+    emailFrom: process.env.EMAIL_FROM,
+    adminEmail: process.env.ADMIN_EMAIL,
+    sendGridApiKey: process.env.SENDGRID_API_KEY,
+    turnstile: {
+      secretKey: process.env.NUXT_TURNSTILE_SECRET_KEY || "",
+    },
+    public: {
+      siteUrl: process.env.APP_URL || "https://jahid.dev",
+      siteName: process.env.SITE_NAME || "Jahid Anowar",
+      siteDescription:
+        process.env.SITE_DESCRIPTION ||
+        "I’m Jahid Anowar, a Full Stack Web Developer, Programming for the last 4 years and have built 200+ human-centered websites and apps for businesses.",
+      language: "en-US", // prefer more explicit language codes like `en-AU` over `en`,
+      titleSeparator: "-",
+    },
+  },
 
   /**
    * Nuxt Content
