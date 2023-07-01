@@ -64,4 +64,9 @@ if (!data.value) {
   </div>
 </template>
 
-<style></style>
+<style>
+/* Only reference the code not the pre code */
+code:not(pre code) {
+  @apply bg-white/20 py-px px-1 rounded;
+}
+</style>

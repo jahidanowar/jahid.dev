@@ -26,6 +26,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   extends: ["nuxt-seo-kit"],
 
   /**
@@ -42,6 +43,7 @@ export default defineNuxtConfig({
     "@nuxtjs/supabase",
     "nuxt-swiper",
     "@vueuse/nuxt",
+    "@vee-validate/nuxt",
   ],
 
   runtimeConfig: {
@@ -112,9 +114,6 @@ export default defineNuxtConfig({
         file: "en-US.json",
       },
     ],
-    vueI18n: {
-      fallbackLocale: "en",
-    },
   },
 
   /**
@@ -122,5 +121,16 @@ export default defineNuxtConfig({
    */
   supabase: {
     // Options
+  },
+
+  /**
+   * Vee Validate
+   */
+  veeValidate: {
+    autoImports: true,
+  },
+
+  devtools: {
+    enabled: true,
   },
 });

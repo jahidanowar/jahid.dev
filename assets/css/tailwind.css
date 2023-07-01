@@ -140,7 +140,7 @@ Spaicing
 .content ol,
 .content pre,
 .content iframe {
-@apply mb-4;
+@apply mb-6;
 }
 [itemprop="text"] {
 }

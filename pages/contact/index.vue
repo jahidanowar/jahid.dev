@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Form, Field } from "vee-validate";
 import { string } from "yup";
 
 const { t } = useI18n();
@@ -143,6 +142,7 @@ const handleSubmit = async (values: any, { resetForm }: any) => {
               type="submit"
               icon="heroicons:paper-airplane"
               class="btn-primary"
+              :disabled="isSubmitting"
             >
               <template #icon>
                 <Icon
