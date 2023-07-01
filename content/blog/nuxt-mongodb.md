@@ -89,7 +89,7 @@ If you navigate to the `/api/users` route, you should see a list of all the user
 
 If you enjoy learning through video tutorials, I have created a video where i walk you through the above steps:
 
-<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/h10sAu3ETr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe loading="lazy" style="border: 0; top: 0; left: 0; width: 100%; height: 350px;" src="https://www.youtube.com/embed/h10sAu3ETr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Example Project
 
@@ -147,7 +147,7 @@ That's it! Now you can use mongoose in your Nuxt 3 server routes like how it is 
 
 If you prefer video tutorials, you can watch the following video where I walk you through the process of adding MongoDB and Mongoose to a Nuxt 3 project:
 
-<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/EidO0c9L6b0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe loading="lazy" style="border: 0; top: 0; left: 0; width: 100%; height: 350px;" src="https://www.youtube.com/embed/EidO0c9L6b0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Example Project
 

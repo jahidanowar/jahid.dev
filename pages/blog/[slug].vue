@@ -31,13 +31,13 @@ if (!data.value) {
           </div>
           <div class="inline-flex ml-4">
             <Icon name="heroicons:user" class="mr-2" size="16" />
-            <span>Jahid</span>
+            <span>Jahid Anowar</span>
           </div>
         </div>
         <!-- ./ Post Meta   -->
         <!-- Post Thumbnail -->
         <div
-          class="relative mt-5 h-[300px] lg:h-[400px] rounded-3xl overflow-hidden shadow-2xl"
+          class="relative mt-5 h-[200px] md:h-[350px] lg:h-[400px] rounded-3xl overflow-hidden shadow-2xl"
         >
           <NuxtImg
             :src="data.image"
