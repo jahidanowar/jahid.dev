@@ -44,6 +44,7 @@ export default defineNuxtConfig({
     "nuxt-swiper",
     "@vueuse/nuxt",
     "@vee-validate/nuxt",
+    "nuxt-clarity-analytics",
   ],
 
   runtimeConfig: {
