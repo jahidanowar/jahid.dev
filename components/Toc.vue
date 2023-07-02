@@ -9,6 +9,11 @@ const tocToggle = ref<boolean | undefined>(false);
 
 onMounted(() => {
   // When the user scroll to the article section then show the toc for one time
+
+  if (document.querySelector(".content h2") === null) {
+    return;
+  }
+
   const observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
       if (window.innerWidth < 768) {

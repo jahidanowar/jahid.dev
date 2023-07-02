@@ -200,3 +200,19 @@ scroll-margin-top: 100px;
 .content pre {
 @apply bg-gray-200 dark:bg-white/10 rounded-xl p-4 overflow-x-auto;
 }
+
+.nav-link.router-link-active{
+    @apply text-primary-500;
+}
+
+/* Page Transition */
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+    transform: translateX(20px);
+}
+
