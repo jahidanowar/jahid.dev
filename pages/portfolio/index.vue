@@ -21,25 +21,11 @@ const { data } = await useFetch(
     />
     <!-- ./ Page Hero  -->
     <div v-if="data" class="container mx-auto my-20 px-6">
-      <ContentList
-        path="/portfolio"
-        :query="{
-          limit: -1,
-          fields: ['title', 'image', 'date'],
-          sort: [
-            {
-              date: -1,
-            },
-          ],
-        }"
-        v-slot="{ list }"
-      >
-        <CardPortfolio
-          v-for="portfolio in list"
-          :key="portfolio._path"
-          :portfolio="portfolio"
-        />
-      </ContentList>
+      <CardPortfolio
+        v-for="(portfolio, i) in data"
+        :key="i"
+        :portfolio="portfolio"
+      />
     </div>
   </div>
 </template>
