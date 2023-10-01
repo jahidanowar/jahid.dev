@@ -12,8 +12,8 @@ defineProps<{
   >
     <div class="w-full md:w-6/12 relative h-64 md:h-96">
       <NuxtImg
-        :src="portfolio._embedded['wp:featuredmedia']['0'].source_url"
-        :alt="portfolio.title.rendered"
+        :src="portfolio.image"
+        :alt="portfolio.title"
         class="absolute object-cover w-full h-full rounded-2xl transform duration-200 group-hover:-translate-y-2 group-hover:shadow-xl"
       />
     </div>
@@ -21,14 +21,14 @@ defineProps<{
       <h3
         class="text-2xl md:text-4xl font-normal leading-tight group-hover:underline"
       >
-        {{ portfolio.title.rendered }}
+        {{ portfolio.title }}
       </h3>
-      <div class="mt-5" v-html="portfolio.excerpt.rendered"></div>
+      <div class="mt-5">{{ portfolio._path }}</div>
       <NuxtLink
         :to="
           $localePath({
             name: 'portfolio-slug',
-            params: { slug: portfolio.slug },
+            params: { slug: portfolio._path },
           })
         "
         class="mt-5 text-primary inline-flex items-center group-hover:underline duration-200"

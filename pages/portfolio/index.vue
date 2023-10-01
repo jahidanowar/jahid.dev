@@ -1,7 +1,7 @@
 <script setup lang="ts">
-const { data } = await useFetch(
-  "https://api.jahid.dev/wp-json/wp/v2/project?_embed=1"
-);
+// const { data } = await useFetch(
+//   "https://api.jahid.dev/wp-json/wp/v2/project?_embed=1"
+// );
 </script>
 
 <template>
@@ -20,12 +20,11 @@ const { data } = await useFetch(
       description="Designed Website for Small and Medium Sized Business and did UI/UX enhancements to bring more customers to the business."
     />
     <!-- ./ Page Hero  -->
-    <div v-if="data" class="container mx-auto my-20 px-6">
+    <div class="container mx-auto my-20 px-6">
       <ContentList
-        path="/portfolio"
+        path="/projects"
         :query="{
           limit: -1,
-          fields: ['title', 'image', 'date'],
           sort: [
             {
               date: -1,
