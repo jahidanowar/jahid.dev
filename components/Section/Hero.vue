@@ -83,9 +83,12 @@ const localPath = useLocalePath();
         <div
           class="p-4 w-full bg-white dark:bg-black/50 text-center flex justify-center bg-opacity-60 z-20"
         >
-          <div class="text-xl">
+          <a
+            class="text-xl"
+            href="https://www.youtube.com/@jahiddev?sub_confirmation=1"
+          >
             {{ $t("explore") + " " + $t("youtube") + " " + $t("videos") }}
-          </div>
+          </a>
         </div>
       </div>
     </div>
