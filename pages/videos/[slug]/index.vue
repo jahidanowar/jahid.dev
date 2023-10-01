@@ -51,13 +51,13 @@ onMounted(() => {
       playerConfig.videoId = data.value?.videos[currentVideo.value];
     }
 
-    const player = new YT.Player("player", playerConfig);
+    new YT.Player(player.value, playerConfig);
 
     // on ready
-    player.addEventListener("onReady", (event: any) => {
-      console.log("Player Ready");
-      console.log(player.getPlaylist());
-    });
+    // player?.addEventListener("onReady", (event: any) => {
+    //   console.log("Player Ready");
+    //   console.log(player.getPlaylist());
+    // });
   }
 });
 </script>
@@ -126,6 +126,7 @@ onMounted(() => {
       >
         <div class="relative min-h-[600px]">
           <div ref="player" id="player" class="absolute w-full h-full"></div>
+          <!-- <YoutubeVideo :videoId="data.videos[currentVideo]" /> -->
         </div>
       </div>
       <!-- ./ Video Player  -->
