@@ -43,7 +43,7 @@ const socialLinks = ref([
       </div>
       <div class="grid lg:grid-cols-12 gap-5">
         <div class="col-span-12 lg:col-span-7">
-          <SectionTestimonial class="lg:px-20" />
+          <SectionTestimonial :key="useRoute().fullPath" class="lg:px-20" />
         </div>
         <div class="col-span-12 lg:col-span-5">
           <Cta

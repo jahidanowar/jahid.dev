@@ -35,7 +35,9 @@ const project = data.value[0];
       <div class="col-span-10 sm:col-span-5">
         <div class="p-10">
           <h1>{{ project.title.rendered }}</h1>
-          <p class="mt-5">{{ project.excerpt.rendered }}</p>
+          <div class="mt-5">
+            <div v-html="project.excerpt.rendered"></div>
+          </div>
           <!-- Info Box -->
           <div class="grid sm:grid-cols-2 gap-5 mt-10">
             <div class="info-box p-5 rounded-lg bg-gray-100 dark:bg-gray-800">
@@ -102,7 +104,7 @@ const project = data.value[0];
             </div>
             <nuxt-link
               :to="$localePath({ name: 'contact' })"
-              class="info-box p-5 rounded-lg bg-primary-500 hover:bg-primary-600 text-white dark:text-white text-center shadow-lg"
+              class="info-box p-5 rounded-lg bg-gradient-to-l from-teal-600 to-primary-500 hover:from-primary-600 hover:to-primary-400 transition-all duration-300 text-white dark:text-white text-center shadow-lg flex flex-col justify-center items-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
