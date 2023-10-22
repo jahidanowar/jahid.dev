@@ -1,7 +1,16 @@
 <script setup lang="ts">
-const { data } = await useFetch(
-  "https://api.jahid.dev/wp-json/wp/v2/project?_embed=1"
-);
+import useWp from "~/composable/useWp";
+
+const { t } = useI18n();
+
+const { data } = await useWp().getProjects();
+
+if (!data.value?.length) {
+  throw createError({
+    statusCode: 404,
+    message: t("error_404"),
+  });
+}
 </script>
 
 <template>

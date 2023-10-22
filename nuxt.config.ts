@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    pageTransition: { name: "page", mode: "out-in" },
+    pageTransition: { name: "fade", mode: "out-in" },
     head: {
       link: [
         {
@@ -38,9 +38,8 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "@nuxt/content",
-    "@nuxt/image-edge",
+    "@nuxt/image",
     "@nuxtjs/i18n",
-    "@nuxtjs/partytown",
     "@nuxtjs/supabase",
     "nuxt-swiper",
     "@vueuse/nuxt",
@@ -56,6 +55,7 @@ export default defineNuxtConfig({
       secretKey: process.env.NUXT_TURNSTILE_SECRET_KEY || "",
     },
     public: {
+      WPUrl: process.env.WP_URL,
       siteUrl: process.env.APP_URL || "https://jahid.dev",
       siteName: process.env.SITE_NAME || "Jahid Anowar",
       siteDescription:

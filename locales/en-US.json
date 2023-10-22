@@ -15,6 +15,7 @@
     "submit": "Submit",
     "contact": "Contact",
     "contact_success_message": "Your message has been sent successfully.",
+    "error_404": "Oops! Page not found.",
     "error_404_button": "Go back home",
     "navigation": {
         "blog": "Blog",
@@ -33,7 +34,6 @@
         "max": {
             "string": "The {field} may not be greater than {max} characters."
         }
-    
-    }
-    
+    },
+    "redirecting_to": "Redirecting to {url}"
 }

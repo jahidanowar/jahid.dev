@@ -39,17 +39,13 @@ const testimonials = ref([
 </script>
 
 <template>
-  <div class="testimonials">
+  <div class="testimonials flex">
     <ClientOnly>
       <Swiper
         :modules="[SwiperAutoplay, SwiperEffectCards]"
         :slides-per-view="1"
         :loop="true"
         :effect="'cards'"
-        :autoplay="{
-          delay: 4000,
-          disableOnInteraction: true,
-        }"
         class="w-[320px] sm:w-[340px] lg:w-full"
       >
         <SwiperSlide

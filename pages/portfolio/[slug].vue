@@ -1,15 +1,21 @@
 <script setup lang="ts">
+import useWp from "~/composable/useWp";
+
 const params = useRoute().params;
 
+const { t } = useI18n();
 const { $localePath } = useNuxtApp();
 
-const { data }: any = await useFetch(
-  "https://api.jahid.dev/wp-json/wp/v2/project/?slug=" +
-    params.slug +
-    "&_embed=1"
-);
+const { data }: any = await useWp().getProject(params.slug as string);
 
 const project = data.value[0];
+
+if (!project) {
+  throw createError({
+    statusCode: 404,
+    message: t("error_404"),
+  });
+}
 </script>
 
 <template>
