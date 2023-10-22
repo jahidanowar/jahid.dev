@@ -1,11 +1,15 @@
 {
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "release:minor": "changelogen --release --minor && git push --follow-tags",
+    "release:major": "changelogen --release --major && git push --follow-tags",
+    "release:patch": "changelogen --release --patch && git push --follow-tags"
   },
   "type": "module",
   "devDependencies": {
@@ -22,6 +26,7 @@
     "@vee-validate/nuxt": "^4.10.3",
     "@vueuse/core": "^10.2.1",
     "@vueuse/nuxt": "^10.2.1",
+    "changelogen": "^0.5.5",
     "nuxt": "^3.8.0",
     "nuxt-clarity-analytics": "^0.0.2",
     "nuxt-icon": "^0.5.0",
