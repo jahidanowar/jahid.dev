@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.0.1...v0.0.2)
+
+### 🚀 Enhancements
+
+- Links Added ([07b07c8](https://github.com/jahidanowar/jahid-nuxt3/commit/07b07c8))
+
+### ❤️ Contributors
+
+- Jahidanowar <milon5143@gmail.com>
+
 ## v0.0.1
 
 
