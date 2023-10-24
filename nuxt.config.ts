@@ -51,6 +51,7 @@ export default defineNuxtConfig({
     emailFrom: process.env.EMAIL_FROM,
     adminEmail: process.env.ADMIN_EMAIL,
     sendGridApiKey: process.env.SENDGRID_API_KEY,
+    youtubeApiKey: process.env.YOUTUBE_API_KEY,
     turnstile: {
       secretKey: process.env.NUXT_TURNSTILE_SECRET_KEY || "",
     },

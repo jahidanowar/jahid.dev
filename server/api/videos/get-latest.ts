@@ -3,6 +3,8 @@ import type { YoutubeVideo } from "~/types/video/YoutubeVideo";
 export default defineEventHandler(async (event) => {
   // Get the latest youtube video from a channel
 
+  const config = useRuntimeConfig();
+
   let { channelId } = getQuery(event);
 
   if (!channelId) {
@@ -11,7 +13,7 @@ export default defineEventHandler(async (event) => {
 
   try {
     const req = await fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=1&order=date&type=video&key=${process.env.YOUTUBE_API_KEY}`
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=1&order=date&type=video&key=${config.youtubeApiKey}`
     );
 
     const res = await req.json();
