@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.0.3...v0.0.4)
+
+### 💅 Refactors
+
+- Redme updated ([8373f18](https://github.com/jahidanowar/jahid-nuxt3/commit/8373f18))
+
+### 🎨 Styles
+
+- Gradient border added to the youtube link ([5e7ad30](https://github.com/jahidanowar/jahid-nuxt3/commit/5e7ad30))
+
+### ❤️ Contributors
+
+- Jahidanowar <milon5143@gmail.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.0.2...v0.0.3)
