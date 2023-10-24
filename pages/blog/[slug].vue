@@ -17,7 +17,7 @@ if (!data.value) {
   <div class="single blog blog-single py-32">
     <Head>
       <Title>{{ data?.title }}</Title>
-      <Meta name="description" :content="data?.excerpt" />
+      <Meta v-if="data?.excerpt" name="description" :content="data?.excerpt" />
     </Head>
     <article class="container mx-auto" v-if="data">
       <!-- Blog Header  -->
@@ -54,10 +54,16 @@ if (!data.value) {
 
       <!-- Blog Content  -->
       <div class="mx-auto max-w-3xl">
-        <Toc :links="data.body.toc.links" class="mb-5" />
-        <Prose>
-          <ContentRenderer :value="data" class="content blog" />
-        </Prose>
+        <Toc
+          v-if="data.body.toc?.links"
+          :links="data.body.toc.links"
+          class="mb-5"
+        />
+
+        <ContentRenderer
+          :value="data"
+          class="content blog prose md:prose-lg lg:prose-xl"
+        />
       </div>
       <!-- ./ Blog Content  -->
     </article>

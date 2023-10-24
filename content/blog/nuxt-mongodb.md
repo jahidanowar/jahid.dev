@@ -34,7 +34,7 @@ This is the easiest way to add MongoDB and Mongoose to your Nuxt 3 project. The 
 
 To get started, install the nuxt-server-utils module using the following command:
 
-```bash [npm]
+```bash
 npm install nuxt-server-utils mongoose
 ```
 
@@ -52,7 +52,9 @@ export default defineNuxtConfig({
 Finally, add the MongoDB connection string to the `.env` file of your nuxt app:
 
 ```bash [.env]
+
 MONGODB_URI=<your-mongodb-connection-string>
+
 ```
 
 That's it! Now you can use mongoose in your Nuxt 3 server routes like how it is normally used in Express.
