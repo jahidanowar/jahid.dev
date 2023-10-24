@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.0.2...v0.0.3)
+
+### 🚀 Enhancements
+
+- Latest Youtube video api added ([85d6983](https://github.com/jahidanowar/jahid-nuxt3/commit/85d6983))
+
+### 🩹 Fixes
+
+- Prose Code modified ([fd2518b](https://github.com/jahidanowar/jahid-nuxt3/commit/fd2518b))
+
+### 💅 Refactors
+
+- Link page components added ([101f2fa](https://github.com/jahidanowar/jahid-nuxt3/commit/101f2fa))
+
+### ❤️ Contributors
+
+- Jahidanowar <milon5143@gmail.com>
+
 ## v0.0.2
 
 [compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.0.1...v0.0.2)
