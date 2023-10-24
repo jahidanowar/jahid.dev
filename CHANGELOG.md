@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.0.4...v0.0.5)
+
+### 🩹 Fixes
+
+- Border fixed ([7c95507](https://github.com/jahidanowar/jahid-nuxt3/commit/7c95507))
+
+### ❤️ Contributors
+
+- Jahidanowar <milon5143@gmail.com>
+
 ## v0.0.4
 
 [compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.0.3...v0.0.4)
