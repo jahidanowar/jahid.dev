@@ -35,5 +35,7 @@
             "string": "The {field} may not be greater than {max} characters."
         }
     },
-    "redirecting_to": "Redirecting to {url}"
+    "redirecting_to": "Redirecting to {url}",
+    "links": "Links",
+    "latest_youtube_video": "Latest Youtube Video"
 }
