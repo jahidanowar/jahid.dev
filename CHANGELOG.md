@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.0
+
+[compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.0.5...v0.1.0)
+
+### 💅 Refactors
+
+- Runtime variable added for `youtubeApiKey` ([f6cdd07](https://github.com/jahidanowar/jahid-nuxt3/commit/f6cdd07))
+
+### ❤️ Contributors
+
+- Jahidanowar <milon5143@gmail.com>
+
 ## v0.0.5
 
 [compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.0.4...v0.0.5)
