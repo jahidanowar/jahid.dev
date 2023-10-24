@@ -16,7 +16,7 @@ defineProps<{
         width="256"
         height="144"
         fit="cover"
-        class="w-full h-full absolute transition-all duration-300 rounded-t-xl lg:rounded-t-none lg:rounded-l-xl"
+        class="w-full h-full absolute transition-all duration-300 rounded-t-xl lg:rounded-se-none lg:rounded-l-xl"
       ></NuxtImg>
     </div>
 
