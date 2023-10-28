@@ -21,8 +21,8 @@ defineProps<{
     </div>
 
     <div class="px-4 py-2 lg:px-4">
-      <div class="font-semibold">
-        {{ video?.snippet.title }}
+      <div v-if="video?.snippet.title" class="font-semibold">
+        <span v-html="video?.snippet.title"></span>
       </div>
       <div class="text-xs mt-1 inline-flex items-center gap-2">
         <Icon name="solar:calendar-minimalistic-outline" size="14"></Icon>
