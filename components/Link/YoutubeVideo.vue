@@ -7,7 +7,7 @@ defineProps<{
 <template>
   <a
     :href="`https://youtube.com/watch?v=${video.id.videoId}`"
-    class="youtube-video gradient-box flex flex-col lg:flex-row items-center group rounded-xl"
+    class="youtube-video gradient-box flex flex-col lg:flex-row lg:items-center group rounded-xl"
   >
     <div class="relative aspect-video w-full lg:w-auto lg:h-[90px]">
       <NuxtImg
@@ -20,7 +20,7 @@ defineProps<{
       ></NuxtImg>
     </div>
 
-    <div class="px-4 py-2 lg:px-4">
+    <div class="px-4 py-4 lg:py-2 lg:px-4">
       <div v-if="video?.snippet.title">
         <h3 class="text-base font-semibold" v-html="video?.snippet.title"></h3>
       </div>
@@ -29,7 +29,7 @@ defineProps<{
 
         <div
           v-if="video.snippet.liveBroadcastContent === 'upcoming'"
-          class="py-1 px-2 bg-gradient-to-r from-primary-600 to-teal-400 rounded"
+          class="py-1 px-2 bg-gradient-to-r from-rose-500 to-amber-500 rounded text-white/90"
         >
           {{ $t("upcoming") }}
         </div>
