@@ -51,9 +51,10 @@ const links = ref([
             class="avatar rounded-full mb-4 ring-4 hover:ring-8 ring-gray-200 dark:ring-gray-800 relative w-[80px] h-[80px] overflow-hidden transition-all duration-300"
           >
             <NuxtImg
-              src="/images/jahid-anowar.png"
+              src="/images/jahid-anowar.jpg"
               width="80"
               height="80"
+              format="webp"
               class="absolute w-full h-full"
               alt="Jahid Anowar"
             ></NuxtImg>

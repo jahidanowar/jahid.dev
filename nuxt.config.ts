@@ -90,7 +90,9 @@ export default defineNuxtConfig({
   /**
    * Nuxt Image
    */
-  image: {},
+  image: {
+    domains: ["i.ytimg.com"],
+  },
 
   /**
    * Color Mode

@@ -11,7 +11,7 @@ defineProps<{
   >
     <div class="relative aspect-video w-full lg:w-auto lg:h-[90px]">
       <NuxtImg
-        :src="video?.snippet.thumbnails.medium.url"
+        :src="`https://i.ytimg.com/vi/${video.id.videoId}/hq720.jpg`"
         :alt="video?.snippet.title"
         width="256"
         height="144"
@@ -21,12 +21,25 @@ defineProps<{
     </div>
 
     <div class="px-4 py-2 lg:px-4">
-      <div v-if="video?.snippet.title" class="font-semibold">
-        <span v-html="video?.snippet.title"></span>
+      <div v-if="video?.snippet.title">
+        <h3 class="text-base font-semibold" v-html="video?.snippet.title"></h3>
       </div>
-      <div class="text-xs mt-1 inline-flex items-center gap-2">
-        <Icon name="solar:calendar-minimalistic-outline" size="14"></Icon>
-        <span> {{ formatDate(video.snippet.publishedAt) }}</span>
+      <div class="text-xs mt-2 flex gap-4">
+        <!-- Upcoming Badge  -->
+
+        <div
+          v-if="video.snippet.liveBroadcastContent === 'upcoming'"
+          class="py-1 px-2 bg-gradient-to-r from-primary-600 to-teal-400 rounded"
+        >
+          {{ $t("upcoming") }}
+        </div>
+
+        <!-- ./ Upcoming Badge -->
+
+        <div class="inline-flex items-center gap-2">
+          <Icon name="solar:calendar-minimalistic-outline" size="14"></Icon>
+          <span> {{ formatDate(video.snippet.publishedAt) }}</span>
+        </div>
       </div>
     </div>
   </a>
