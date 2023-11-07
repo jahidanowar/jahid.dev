@@ -26,7 +26,7 @@ if (!data.value) {
       <Meta
         v-if="data?.image"
         name="og:image"
-        :content="data?.image"
+        :content="`https://jahid/dev/${data?.image}`"
         property="og:image"
       />
 
@@ -35,7 +35,7 @@ if (!data.value) {
       <Meta
         v-if="data?.image"
         name="twitter:image"
-        :content="data?.image"
+        :content="`https://jahid.dev${data?.image}`"
         property="twitter:image"
       />
 
@@ -49,7 +49,7 @@ if (!data.value) {
       <Meta
         v-if="data?.meta_description"
         name="twitter:description"
-        :content="data?.meta_description"
+        :content="`https://jahid.dev${data?.image}`"
         property="twitter:description"
       />
     </Head>
