@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.4
+
+[compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.1.3...v0.1.4)
+
+### 🩹 Fixes
+
+- Meta Tags ([2a7d12d](https://github.com/jahidanowar/jahid-nuxt3/commit/2a7d12d))
+
+### ❤️ Contributors
+
+- Jahidanowar <milon5143@gmail.com>
+
 ## v0.1.3
 
 [compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.1.2...v0.1.3)
