@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.5
+
+[compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.1.4...v0.1.5)
+
+### 🩹 Fixes
+
+- Twitter card ([27bf35c](https://github.com/jahidanowar/jahid-nuxt3/commit/27bf35c))
+
+### ❤️ Contributors
+
+- Jahidanowar <milon5143@gmail.com>
+
 ## v0.1.4
 
 [compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.1.3...v0.1.4)
