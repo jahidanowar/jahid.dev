@@ -2,7 +2,7 @@
 title: "How to update Laravel installer to 4.x or Up"
 date: "2020-10-23"
 image: "/images/blog/laravel-installer-update-1.webp"
-excerpt: "Laravel 8 comes with a lot of cool new features. In order to use full Laravel magic (CLI Installer). In this tutorial, we will see the 3 easiest methods to update laravel installer to the Latest Version."
+meta_description: "Laravel 8 comes with a lot of cool new features. In order to use full Laravel magic (CLI Installer). In this tutorial, we will see the 3 easiest methods to update laravel installer to the Latest Version."
 author: "Jahid Anowar"
 tags: ["laravel", "laravel 8", "laravel 8 installer", "laravel installer"]
 ---

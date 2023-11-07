@@ -2,7 +2,7 @@
 title: "Integrating MongoDB and Mongoose with Nuxt 3"
 date: "2023-07-01"
 image: "/images/blog/add-mongodb-mongoose-support-in-nuxt.png"
-excerpt: "Step-by-step guide to using MongoDB & Mongoose with Nuxt 3"
+meta_description: "Step-by-step guide to using MongoDB & Mongoose with Nuxt 3"
 author: "Jahid Anowar"
 tags: ["Nuxt", "MongoDB", "Mongoose", "Database"]
 ---

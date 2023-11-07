@@ -2,7 +2,7 @@
 title: "Creating Vue.js 3 Image Finder Web App Using Pixabay API"
 date: "2022-02-22"
 image: "/images/blog/vuejs-3-image-finder-app-using-pixabay-api-and-bootstrap-1.jpg"
-excerpt: "Vue 3 comes with awesome sets of features that can be used to ease our frontend development process. I will demonstrate Vue.js 3 by building a Image searching web app using Pixabay API."
+meta_description: "Vue 3 comes with awesome sets of features that can be used to ease our frontend development process. I will demonstrate Vue.js 3 by building a Image searching web app using Pixabay API."
 author: "Jahid Anowar"
 tags: ["vuejs", "vue js", "vue js 3", "vue js 3 image finder"]
 ---

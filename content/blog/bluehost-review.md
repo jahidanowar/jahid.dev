@@ -2,7 +2,7 @@
 title: "Bluehost Review from a Developer's perspective"
 date: "2022-01-20"
 image: "/images/blog/bluehost-review-by-developer.webp"
-excerpt: "In this Bluehost review, I am going to tell you about my experiences with Bluehost as a developer."
+meta_description: "In this Bluehost review, I am going to tell you about my experiences with Bluehost as a developer."
 author: "Jahid Anowar"
 tags: ["bluehost", "webhosting", "review"]
 ---

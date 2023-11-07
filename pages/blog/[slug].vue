@@ -17,8 +17,43 @@ if (!data.value) {
   <div class="single blog blog-single py-32">
     <Head>
       <Title>{{ data?.title }}</Title>
-      <Meta v-if="data?.excerpt" name="description" :content="data?.excerpt" />
+      <Meta
+        v-if="data?.meta_description"
+        name="description"
+        :content="data.meta_description"
+      />
+
+      <Meta
+        v-if="data?.image"
+        name="og:image"
+        :content="data?.image"
+        property="og:image"
+      />
+
+      <!-- Twiter Card -->
+
+      <Meta
+        v-if="data?.image"
+        name="twitter:image"
+        :content="data?.image"
+        property="twitter:image"
+      />
+
+      <Meta
+        v-if="data?.title"
+        name="twitter:title"
+        :content="data?.title"
+        property="twitter:title"
+      />
+
+      <Meta
+        v-if="data?.meta_description"
+        name="twitter:description"
+        :content="data?.meta_description"
+        property="twitter:description"
+      />
     </Head>
+
     <article class="container mx-auto" v-if="data">
       <!-- Blog Header  -->
       <header class="mx-auto max-w-3xl mb-10">

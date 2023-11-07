@@ -2,7 +2,7 @@
 title: "How to create custom 404 Page for Nuxt.js App Hosted on Netlify"
 date: "2022-08-17"
 image: "/images/blog/nuxt-js-custom-404-error-page-hosted-on-netlify.webp"
-excerpt: "You can publish your web app with just 3 clicks. It works great for Nuxt as well but the Nuxt 404 page doesn’t work in Netlify. So let’s build one."
+meta_description: "You can publish your web app with just 3 clicks. It works great for Nuxt as well but the Nuxt 404 page doesn’t work in Netlify. So let’s build one."
 author: "Jahid Anowar"
 tags: ["nuxt", "nuxtjs", "nuxtjs 404", "netlify"]
 ---

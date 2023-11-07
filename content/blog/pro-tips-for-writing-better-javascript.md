@@ -2,7 +2,7 @@
 title: "5 Pro Tips for Writing Better JavaScript in 2023"
 date: "2022-12-03"
 image: "/images/blog/tips-to-write-better-javascript.webp"
-excerpt: "Learn how to write better JavaScript code with these five pro tips. From using code linting tools to staying up-to-date with the latest developments in JavaScript, these tips will improve the quality, efficiency, and maintainability of your code."
+meta_description: "Learn how to write better JavaScript code with these five pro tips. From using code linting tools to staying up-to-date with the latest developments in JavaScript, these tips will improve the quality, efficiency, and maintainability of your code."
 author: "Jahid Anowar"
 tags:
   [

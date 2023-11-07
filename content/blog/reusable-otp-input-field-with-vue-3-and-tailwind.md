@@ -2,7 +2,7 @@
 title: "How to make a Reusable OTP Input Field with Vue 3 and Tailwind CSS"
 date: "2022-10-16"
 image: "/images/blog/otp-input-in-vue-3-nuxt-3-tailwindcss-1.webp"
-excerpt: "If you’re looking for a quick and easy way to create an OTP input field using Vue 3 and Tailwind CSS, then this guide is for you."
+meta_description: "If you’re looking for a quick and easy way to create an OTP input field using Vue 3 and Tailwind CSS, then this guide is for you."
 author: "Jahid Anowar"
 tags: ["vue", "vue3", "tailwindcss"]
 ---

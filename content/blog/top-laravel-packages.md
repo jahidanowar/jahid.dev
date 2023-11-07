@@ -2,7 +2,7 @@
 title: "10 Laravel Packages you must use in 2022"
 date: "2021-03-26"
 image: "/images/blog/top-laravel-packages.webp"
-excerpt: "Looking for the best Laravel Packages to use on your next application? Here’s our pick of the must have packages for your next Laravel project."
+meta_description: "Looking for the best Laravel Packages to use on your next application? Here’s our pick of the must have packages for your next Laravel project."
 author: "Jahid Anowar"
 tags: ["laravel", "laravel packages", "laravel 8", "laravel 8 packages"]
 ---
