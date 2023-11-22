@@ -51,6 +51,7 @@ onMounted(() => {
       playerConfig.videoId = data.value?.videos[currentVideo.value];
     }
 
+    // @ts-expect-error
     new YT.Player(player.value, playerConfig);
 
     // on ready
@@ -148,6 +149,7 @@ onMounted(() => {
               width="334px"
               height="188px"
               loading="lazy"
+              :placeholder="[50, 25, 75, 5]"
             ></NuxtImg>
           </div>
         </div>

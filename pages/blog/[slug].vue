@@ -81,6 +81,7 @@ if (!data.value) {
             width="334px"
             height="188px"
             loading="lazy"
+            :placeholder="[50, 25, 75, 5]"
           ></NuxtImg>
         </div>
         <!-- ./ Post Thumbnail  -->

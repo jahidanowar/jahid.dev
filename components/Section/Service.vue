@@ -71,6 +71,7 @@ const services = ref([
             src="/images/clientele.png"
             alt="Brands I have worked with"
             class="mx-auto w-full mt-2 filter brightness-0 invert"
+            :placeholder="[50, 25, 75, 5]"
           />
         </div>
       </div>

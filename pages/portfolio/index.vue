@@ -26,7 +26,7 @@ if (!data.value?.length) {
     <!-- Page Hero  -->
     <SectionPageHero
       title="Portfolio"
-      description="Designed Website for Small and Medium Sized Business and did UI/UX enhancements to bring more customers to the business."
+      description="Designed Web apps for Small and Medium Sized Business and did UI/UX enhancements to bring more customers to the business."
     />
     <!-- ./ Page Hero  -->
     <div v-if="data" class="container mx-auto my-20 px-6">

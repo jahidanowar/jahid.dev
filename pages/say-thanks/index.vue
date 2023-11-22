@@ -15,7 +15,7 @@ import { Form } from "vee-validate";
     <div class="container mx-auto">
       <div class="max-w-2xl mx-auto">
         <div class="card">
-          <Form> </Form>
+          <Form class="border"></Form>
         </div>
       </div>
     </div>

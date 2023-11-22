@@ -32,6 +32,7 @@ if (!project) {
             <NuxtImg
               :src="project._embedded['wp:featuredmedia']['0'].source_url"
               alt=""
+              :placeholder="[50, 25, 75, 5]"
               class="absolute object-cover w-full h-full"
             ></NuxtImg>
           </div>

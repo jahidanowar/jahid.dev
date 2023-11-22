@@ -13,6 +13,7 @@ defineProps<{
       width="334px"
       height="188px"
       loading="lazy"
+      :placeholder="[50, 25, 75, 5]"
     ></NuxtImg>
     <!-- Blog Meta -->
     <div class="inline-flex items-center mb-2">

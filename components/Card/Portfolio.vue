@@ -14,6 +14,7 @@ defineProps<{
       <NuxtImg
         :src="portfolio._embedded['wp:featuredmedia']['0'].source_url"
         :alt="portfolio.title.rendered"
+        :placeholder="[50, 25, 75, 5]"
         class="absolute object-cover w-full h-full rounded-2xl transform duration-200 group-hover:-translate-y-2 group-hover:shadow-xl"
       />
     </div>

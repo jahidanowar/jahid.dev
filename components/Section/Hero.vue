@@ -59,10 +59,11 @@ const localPath = useLocalePath();
         class="w-full min:h-[300px] relative rounded-2xl border-8 border-white border-opacity-30 dark:border-opacity-70 dark:border-black/30 bg-white dark:bg-gray-900 backdrop-blur bg-opacity-20 dark:bg-opacity-20 shadow-2xl dark:shadow-2xl group hover:cursor-pointer mb-12 overflow-hidden"
       >
         <div class="h-full w-full relative">
-          <nuxt-img
+          <NuxtImg
             src="/images/feature-video.webp"
             class="w-full h-full"
-          ></nuxt-img>
+            :placeholder="[50, 25, 75, 5]"
+          ></NuxtImg>
           <div
             class="overlay absolute top-0 right-0 bottom-0 left-0 bg-gray-900 grid place-items-center text-white bg-opacity-40 group-hover:bg-opacity-80 duration-300 backdrop-blur-[0px] group-hover:backdrop-blur-[5px] z-10"
           >

@@ -57,6 +57,7 @@ const links = ref([
               format="webp"
               class="absolute w-full h-full"
               alt="Jahid Anowar"
+              :placeholder="[50, 25, 75, 5]"
             ></NuxtImg>
           </div>
           <h1 class="text-xl mb-4">

@@ -21,6 +21,7 @@ defineProps<{
           class="rounded-full w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]"
           width="100"
           height="100"
+          :placeholder="[50, 25, 75, 5]"
         />
         <div class="ml-4">
           <h4 class="text-lg font-semibold">{{ testimonial.name }}</h4>
