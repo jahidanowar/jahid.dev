@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.6
+
+[compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.1.5...v0.1.6)
+
+### 💅 Refactors
+
+- Directory refactored, Image placeholder added ([84b43f4](https://github.com/jahidanowar/jahid-nuxt3/commit/84b43f4))
+
+### ❤️ Contributors
+
+- Jahidanowar <milon5143@gmail.com>
+
 ## v0.1.5
 
 [compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.1.4...v0.1.5)
