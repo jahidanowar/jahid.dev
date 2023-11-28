@@ -5,11 +5,6 @@ const { t } = useI18n();
 
 const socialLinks = ref([
   {
-    name: "youtube",
-    link: "https://jahid.dev/go/yt",
-    icon: "bi:youtube",
-  },
-  {
     name: "discord",
     link: "https://jahid.dev/go/d",
     icon: "bi:discord",
@@ -18,6 +13,16 @@ const socialLinks = ref([
     name: "twitter",
     link: "https://jahid.dev/go/tw",
     icon: "bi:twitter",
+  },
+  {
+    name: "cal.com",
+    link: "https://cal.com/jahid/15min",
+    icon: "material-symbols:hangout-meeting-outline",
+  },
+  {
+    name: "youtube",
+    link: "https://jahid.dev/go/yt",
+    icon: "bi:youtube",
   },
   {
     name: "github",
@@ -190,7 +195,7 @@ const handleSubmit = async (values: any, { resetForm }: any) => {
               :key="link.name"
               :href="link.link"
               target="_blank"
-              class="rounded-3xl p-5 bg-black/10 dark:bg-white/10 dark:hover:bg-white/20 duration-300 transition-all group"
+              class="rounded-2xl p-5 bg-black/10 dark:bg-white/10 dark:hover:bg-white/20 duration-300 transition-all group"
             >
               <Icon
                 :name="link.icon"
