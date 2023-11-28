@@ -11,12 +11,12 @@ const localPath = useLocalePath();
       class="mx-auto w-full md:w-7/12 z-20 flex flex-col gap-y-4 items-center md:items-start"
     >
       <h1
-        class="text-4xl lg:text-6xl text-center md:text-left font-bold tracking-tight"
+        class="text-4xl lg:text-5xl text-center md:text-left font-bold tracking-tight lg:w-11/12"
       >
         {{ $t("hero_title") }}
       </h1>
       <p
-        class="leading-relaxed mt-6 w-11/12 lg:w-7/12 text-center md:text-left"
+        class="leading-relaxed mt-6 w-11/12 lg:w-8/12 text-center md:text-left text-lg"
       >
         {{ $t("hero_description") }}
       </p>
@@ -26,14 +26,14 @@ const localPath = useLocalePath();
           class="btn btn-primary inline-flex items-center"
         >
           <span>{{ $t("hero_button_primary") }}</span>
-          <Icon name="system-uicons:flame" size="20px" class="ml-1" />
+          <Icon name="system-uicons:message-writing" size="20px" class="ml-1" />
         </NuxtLink>
         <NuxtLink
-          :to="localPath('/blog')"
+          :to="localPath('/portfolio')"
           class="ml-2 btn btn-default inline-flex items-xenter"
         >
           <span>{{ $t("hero_button_secondary") }}</span>
-          <Icon name="system-uicons:newspaper" size="20px" class="ml-2" />
+          <Icon name="system-uicons:flame" size="20px" class="ml-2" />
         </NuxtLink>
       </div>
     </div>

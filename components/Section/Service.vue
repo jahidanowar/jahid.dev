@@ -60,7 +60,7 @@ const services = ref([
     <!-- CTA  -->
     <div class="grid md:grid-cols-3 my-5 lg:my-10 gap-5 lg:gap-10">
       <div
-        class="md:col-span-2 py-5 px-10 rounded-3xl bg-white/10 text-center relative overflow-hidden clientele"
+        class="md:col-span-2 py-5 px-10 rounded-3xl bg-white/10 text-center relative overflow-hidden"
       >
         <div class="z-10 text-white">
           <h3>Trusted by Brands Globally</h3>
