@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.1.7
+
+[compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.1.6...v0.1.7)
+
+### 💅 Refactors
+
+- Home page ([0658484](https://github.com/jahidanowar/jahid-nuxt3/commit/0658484))
+- Remove and rearrange social links in contact page ([58ef90e](https://github.com/jahidanowar/jahid-nuxt3/commit/58ef90e))
+
+### ❤️ Contributors
+
+- Jahidanowar <milon5143@gmail.com>
+
 ## v0.1.6
 
 [compare changes](https://github.com/jahidanowar/jahid-nuxt3/compare/v0.1.5...v0.1.6)
