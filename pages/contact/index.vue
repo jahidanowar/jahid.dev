@@ -3,34 +3,6 @@ import { string } from "yup";
 
 const { t } = useI18n();
 
-const socialLinks = ref([
-  {
-    name: "discord",
-    link: "https://jahid.dev/go/d",
-    icon: "bi:discord",
-  },
-  {
-    name: "twitter",
-    link: "https://jahid.dev/go/tw",
-    icon: "bi:twitter",
-  },
-  {
-    name: "cal.com",
-    link: "https://cal.com/jahid/15min",
-    icon: "material-symbols:hangout-meeting-outline",
-  },
-  {
-    name: "youtube",
-    link: "https://jahid.dev/go/yt",
-    icon: "bi:youtube",
-  },
-  {
-    name: "github",
-    link: "https://jahid.dev/go/gh",
-    icon: "bi:github",
-  },
-]);
-
 const isLoading = ref(false);
 const isSubmitted = ref(false);
 
@@ -43,6 +15,19 @@ const schema = {
     t("validation_error.required", { field: t("message") })
   ),
 };
+
+useHead({
+  script: [
+    {
+      type: "text/javascript",
+      textContent: `  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", {origin:"https://cal.com"});
+      Cal("ui", {"styles":{"branding":{"brandColor":"#0ea5e9"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      `,
+      defer: true,
+    },
+  ],
+});
 
 const handleSubmit = async (values: any, { resetForm }: any) => {
   isLoading.value = true;
@@ -97,7 +82,36 @@ const handleSubmit = async (values: any, { resetForm }: any) => {
         <p class="mt-2 block">Say Hello and Let's Create Something Great!</p>
       </div> -->
       <div class="max-w-2xl mx-auto">
+        <!-- Book a free call  -->
+        <div
+          class="card border rounded-3xl dark:border-white/20 p-8 bg-white dark:bg-white/10"
+        >
+          <div class="flex justify-between items-center flex-wrap gap-4">
+            <div>
+              <h2>Book a free call</h2>
+              <p class="mt-1">
+                Let's talk about your project and how I can help you.
+              </p>
+            </div>
+
+            <div>
+              <ButtonIcon
+                icon="system-uicons:calendar-month"
+                class="btn-primary"
+                data-cal-link="jahid/15min"
+                data-cal-config='{"layout":"month_view"}'
+              >
+                Book now</ButtonIcon
+              >
+            </div>
+          </div>
+        </div>
+        <!-- ./ Book a free call -->
+
+        <hr class="my-14 dark:border-gray-800 w-11/12 mx-auto" />
+
         <div class="card">
+          <h2 class="mb-4">Or Send a message</h2>
           <Form
             :validation-schema="schema"
             v-slot="{ errors, isSubmitting }"
@@ -175,8 +189,9 @@ const handleSubmit = async (values: any, { resetForm }: any) => {
             </div>
           </Form>
         </div>
+
         <div
-          class="mt-10 card border rounded-3xl dark:bg-primary-500/20 dark:border-primary-500/50 text-center p-8"
+          class="mt-10 card border rounded-3xl bg-white dark:bg-primary-500/20 dark:border-primary-500/50 text-center p-8"
         >
           <div class="text-xl">or Email me at</div>
           <a
@@ -184,26 +199,6 @@ const handleSubmit = async (values: any, { resetForm }: any) => {
             class="text-3xl font-bold block mt-2 text-primary-500"
             >hello[at]jhaid.dev</a
           >
-        </div>
-        <div
-          class="mt-10 border rounded-3xl p-5 dark:bg-gradient-to-r from-indigo-900/20 to-blue-900/20 dark:border-blue-900/50 bg-black/5"
-        >
-          <div class="text-center text-lg">Connect with me on Social Media</div>
-          <div class="flex justify-around items-center mt-5 py-3">
-            <a
-              v-for="link in socialLinks"
-              :key="link.name"
-              :href="link.link"
-              target="_blank"
-              class="rounded-2xl p-5 bg-black/10 dark:bg-white/10 dark:hover:bg-white/20 duration-300 transition-all group"
-            >
-              <Icon
-                :name="link.icon"
-                size="24"
-                class="group-hover:scale-90 duration-300 transition-all"
-              />
-            </a>
-          </div>
         </div>
       </div>
     </section>
